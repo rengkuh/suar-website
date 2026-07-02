@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<template id="__bundler_thumbnail" data-bg-color="#5F52AA">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#5F52AA"/>
+    <text x="600" y="430" font-family="Georgia, serif" font-size="150" font-weight="700" letter-spacing="-6" text-anchor="middle" fill="#FFFDF5">SUAR</text>
+    <circle cx="600" cy="520" r="13" fill="#FFC933"/>
+  </svg>
+</template>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — SUAR Energi Futura</title>
+<meta name="description" content="SUAR Energi Futura turns agricultural biomass residue into renewable pellet energy — a circular model built from what's left behind.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body data-nav-page="about.html" class="loading">
+
+<!-- ============ INTRO LOADER ============ -->
+<div id="loader" class="loader">
+  <div class="loader-mark"><img src="logo-bone.png" alt="SUAR"></div>
+  <div class="loader-count"><span>0</span></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a class="brand" href="index.html"><img class="brand-uv" src="logo-uv.png" alt="SUAR"><img class="brand-dark" src="logo-sg.png" alt=""></a>
+  <div class="links">
+    <a data-page="about.html" href="about.html"><span class="tick">▼</span><span class="lbl">about</span></a>
+    <a data-page="project.html" href="project.html"><span class="tick">▼</span><span class="lbl">project</span></a>
+    <a data-page="services.html" href="services.html"><span class="tick">▼</span><span class="lbl">services</span></a>
+    <a data-page="product.html" href="product.html"><span class="tick">▼</span><span class="lbl">product</span></a>
+    <a data-page="contact.html" href="contact.html"><span class="tick">▼</span><span class="lbl">contact</span></a>
+    <span class="lang">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="id">ID</button>
+    </span>
+  </div>
+</nav>
+
+<!-- ============ ABOUT HERO → VIDEO TRANSITION (scroll-driven, same page) ============ -->
+<!-- State 1 (p=0): about hero (headline + right panel video). State 2 (p=1): full-width
+     video banner + "our story". One #vt-video morphs between the two via --p. -->
+<section class="video-transition" id="video-transition">
+  <div class="vt-stage">
+
+    <!-- State 1 · left headline -->
+    <div class="vt-left">
+      <span class="eyebrow" data-i18n-en="">About · Suar Energi Futura</span>
+      <span class="eyebrow" data-i18n-id="">Tentang · Suar Energi Futura</span>
+      <h1 class="louize">
+        <span data-i18n-en="">From what's<br>left, we build<br>what's <em>next</em></span>
+        <span data-i18n-id="">Dari yang<br>tersisa, kami<br>bangun yang <em>akan datang</em></span>
+      </h1>
+    </div>
+
+    <!-- State 1 · right-panel dividers + about text -->
+    <div class="vt-vdiv" aria-hidden="true"></div>
+    <div class="vt-about1">
+      <h2 class="ah-about-title louize">About</h2>
+      <span class="ah-about-sub" data-i18n-en="">Design, Engineering &amp; Production</span>
+      <span class="ah-about-sub" data-i18n-id="">Desain, Rekayasa &amp; Produksi</span>
+      <p class="ah-about-body">
+        <span data-i18n-en="">SUAR Energi Futura is an industrial biomass manufacturer turning palm oil agricultural residue into certified solid fuel for industry. We build our facilities at the source, converting waste that would otherwise be burned or left to decompose into reliable, traceable energy.</span>
+        <span data-i18n-id="">SUAR Energi Futura adalah produsen biomassa industrial yang mengubah residu pertanian kelapa sawit menjadi bahan bakar padat bersertifikat untuk industri. Kami membangun fasilitas tepat di sumbernya, mengubah limbah yang seharusnya dibakar atau dibiarkan membusuk menjadi energi yang andal dan terlacak.</span>
+      </p>
+    </div>
+
+    <!-- the single morphing video block -->
+    <div class="vt-video" id="vt-video"><span class="ahv-label">VIDEO</span></div>
+
+    <!-- State 2 · our story (full-width divider + two columns) -->
+    <div class="vt-story">
+      <div class="vt-story-inner">
+        <div class="vts-head">
+          <h2 class="vts-title">our story</h2>
+          <span class="vts-sub" data-i18n-en="">Design, Engineering &amp; Production</span>
+          <span class="vts-sub" data-i18n-id="">Desain, Rekayasa &amp; Produksi</span>
+        </div>
+        <p class="vts-body">
+          <span data-i18n-en="">Powering the future from what&rsquo;s left behind. SUAR turns palm-oil agricultural residue into certified, traceable solid fuel — building circular energy at the source, one batch held to one specification.</span>
+          <span data-i18n-id="">Menyalakan masa depan dari yang tersisa. SUAR mengubah residu pertanian sawit menjadi bahan bakar padat bersertifikat dan terlacak — membangun energi sirkular di sumbernya, tiap batch pada satu spesifikasi.</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Circular by design</span><span>Lower emission</span><span>Renewable feedstock</span><span>Empty fruit bunch</span><span>From Kalimantan</span>
+    <span>Circular by design</span><span>Lower emission</span><span>Renewable feedstock</span><span>Empty fruit bunch</span><span>From Kalimantan</span>
+  </div>
+</div>
+
+<!-- ============ MISSION PHOTO ============ -->
+<div class="about-photo" data-nav-dark="">
+  <img src="pellet.jpg" alt="SUAR biomass pellets made from empty fruit bunch">
+  <span class="ph-tag">Biomass Pellet · EFB</span>
+</div>
+
+<!-- ============ STORY (UV) ============ -->
+<!-- ============ OUR STORY · scroll-driven editorial chapters ============ -->
+<!-- Sticky full-screen section; scroll drives the active slide. story-scroll.js
+     toggles .active on the text slides + slides the right-column images vertically. -->
+<section class="story-scroll" id="story-scroll" style="--n:4">
+  <div class="ss-stage">
+    <div class="ss-grid">
+
+      <!-- LEFT · text -->
+      <div class="ss-text">
+        <div class="ss-eyebrow">
+          <span class="tri" aria-hidden="true"></span>
+          <span data-i18n-en="">Our story</span><span data-i18n-id="">Kisah kami</span>
+        </div>
+
+        <div class="ss-slides">
+          <article class="ss-slide active" data-i="0">
+            <span class="ss-no">01 —</span>
+            <h2 class="ss-title louize" data-i18n-en="">Beneath the Harvest</h2><h2 class="ss-title louize" data-i18n-id="">Di Balik Panen</h2>
+            <p class="ss-desc" data-i18n-en="">Indonesia does not need to look underground for its next energy source. The answer is already on the surface, left behind by the harvest, sitting in the fields after every palm oil cycle. Most of it rots. Most of it burns. All of it carries energy that industry needs. SUAR was built on that observation. Not as a concept. As an operating premise.</p>
+            <p class="ss-desc" data-i18n-id="">Indonesia tak perlu menggali ke bawah tanah untuk sumber energi berikutnya. Jawabannya sudah ada di permukaan, ditinggalkan oleh panen, tergeletak di ladang setelah tiap siklus sawit. Sebagian besar membusuk. Sebagian besar terbakar. Semuanya menyimpan energi yang dibutuhkan industri. SUAR dibangun atas pengamatan itu. Bukan sebagai konsep. Sebagai premis operasi.</p>
+          </article>
+
+          <article class="ss-slide" data-i="1">
+            <span class="ss-no">02 —</span>
+            <h2 class="ss-title louize" data-i18n-en="">Works on Monday</h2><h2 class="ss-title louize" data-i18n-id="">Bekerja Sejak Senin</h2>
+            <p class="ss-desc" data-i18n-en="">Renewable energy that cannot meet industrial specification is not a solution. It is a gesture. What manufacturers in textile, chemical, and FMCG need is fuel they can calibrate a boiler around, fuel with consistent heat output, low emissions, and a supply chain they can contract against. That is what we build. The sustainability case follows from the industrial case, not the other way around.</p>
+            <p class="ss-desc" data-i18n-id="">Energi terbarukan yang tak dapat memenuhi spesifikasi industri bukanlah solusi. Itu hanya gestur. Yang dibutuhkan produsen tekstil, kimia, dan FMCG adalah bahan bakar yang bisa dikalibrasi untuk boiler — keluaran panas konsisten, emisi rendah, dan rantai pasok yang dapat dikontrak. Itulah yang kami bangun. Argumen keberlanjutan mengikuti argumen industri, bukan sebaliknya.</p>
+          </article>
+
+          <article class="ss-slide" data-i="2">
+            <span class="ss-no">03 —</span>
+            <h2 class="ss-title louize" data-i18n-en="">Close the Loop</h2><h2 class="ss-title louize" data-i18n-id="">Tutup Lingkarnya</h2>
+            <p class="ss-desc" data-i18n-en="">We do not source from afar. We build at the origin, inside mill complexes, where the feedstock is already concentrated and the logistics cost disappears. Every facility we commission is designed to process what is already there. That is not an efficiency choice. It is the whole model. Waste becomes feedstock. Disposal cost becomes fuel supply. The loop closes at the source.</p>
+            <p class="ss-desc" data-i18n-id="">Kami tak memasok dari jauh. Kami membangun di sumbernya, di dalam kompleks pabrik, tempat bahan baku sudah terkonsentrasi dan biaya logistik lenyap. Tiap fasilitas yang kami bangun dirancang mengolah apa yang sudah ada di sana. Itu bukan pilihan efisiensi. Itu keseluruhan modelnya. Limbah menjadi bahan baku. Biaya pembuangan menjadi pasokan bahan bakar. Lingkar tertutup di sumbernya.</p>
+          </article>
+
+          <article class="ss-slide" data-i="3">
+            <span class="ss-no">04 —</span>
+            <h2 class="ss-title louize" data-i18n-en="">Always an Energy Story</h2><h2 class="ss-title louize" data-i18n-id="">Selalu Kisah Energi</h2>
+            <p class="ss-desc" data-i18n-en="">Indonesia is one of the world's largest agricultural producers. That scale has always been framed as a resource story. We think it is also an energy story. A country that generates this much residue from its harvests does not need to extract more from the earth to power its industry. It needs to build the infrastructure to use what it already produces. That infrastructure is what SUAR is building.</p>
+            <p class="ss-desc" data-i18n-id="">Indonesia adalah salah satu produsen pertanian terbesar di dunia. Skala itu selalu dibingkai sebagai kisah sumber daya. Kami memandangnya juga sebagai kisah energi. Negara yang menghasilkan residu panen sebanyak ini tak perlu mengekstraksi lebih banyak dari bumi untuk menggerakkan industrinya. Ia perlu membangun infrastruktur untuk menggunakan apa yang sudah diproduksinya. Infrastruktur itulah yang sedang dibangun SUAR.</p>
+          </article>
+        </div>
+
+        <div class="ss-foot">
+          <div class="ss-pager" role="tablist" aria-label="Story chapters">
+            <button class="ss-dot active" type="button" data-go="0" aria-label="Chapter 1"></button>
+            <button class="ss-dot" type="button" data-go="1" aria-label="Chapter 2"></button>
+            <button class="ss-dot" type="button" data-go="2" aria-label="Chapter 3"></button>
+            <button class="ss-dot" type="button" data-go="3" aria-label="Chapter 4"></button>
+          </div>
+          <a class="ss-link" href="services.html">
+            <span data-i18n-en="">Explore the model</span><span data-i18n-id="">Jelajahi modelnya</span>
+            <span class="tri" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT · media (vertical image transition). Replace placeholder paths later. -->
+      <div class="ss-media">
+        <figure class="ss-img" data-i="0"><span class="ss-img-label">01</span><img src="images/story-harvest.jpg" alt="" onerror="this.style.display='none'"></figure>
+        <figure class="ss-img" data-i="1"><span class="ss-img-label">02</span><img src="images/story-boiler.jpg" alt="" onerror="this.style.display='none'"></figure>
+        <figure class="ss-img" data-i="2"><span class="ss-img-label">03</span><img src="images/story-mill.jpg" alt="" onerror="this.style.display='none'"></figure>
+        <figure class="ss-img" data-i="3"><span class="ss-img-label">04</span><img src="images/story-energy.jpg" alt="" onerror="this.style.display='none'"></figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE LOOP ============ -->
+<section class="section model">
+  <div class="wrap">
+    <h2 class="model-title reveal">
+      <span data-i18n-en="">How the loop closes</span>
+      <span data-i18n-id="">Bagaimana siklus tertutup</span>
+    </h2>
+    <div class="loop">
+      <article class="node reveal">
+        <span class="n mono">01</span>
+        <img class="val-ico" src="ico-sustainable.png" alt="">
+        <h3 data-i18n-en="">Biomass residue</h3><h3 data-i18n-id="">Residu biomassa</h3>
+        <p data-i18n-en="">Empty fruit bunch — otherwise burned or dumped.</p>
+        <p data-i18n-id="">Tandan kosong — yang biasanya dibakar atau dibuang.</p>
+      </article>
+      <article class="node reveal d1">
+        <span class="n mono">02</span>
+        <img class="val-ico" src="ico-reliable.png" alt="">
+        <h3 data-i18n-en="">SUAR process</h3><h3 data-i18n-id="">Proses SUAR</h3>
+        <p data-i18n-en="">Chip · dry · densify into uniform pellets.</p>
+        <p data-i18n-id="">Cacah · keringkan · padatkan jadi pelet seragam.</p>
+      </article>
+      <article class="node reveal d2">
+        <span class="n mono">03</span>
+        <img class="val-ico" src="ico-reliable.png" alt="">
+        <h3 data-i18n-en="">Pellet fuel</h3><h3 data-i18n-id="">Bahan bakar pelet</h3>
+        <p data-i18n-en="">Clean, dense, traceable — a renewable coal alternative.</p>
+        <p data-i18n-id="">Bersih, padat, terlacak — alternatif terbarukan batu bara.</p>
+      </article>
+      <article class="node reveal d3">
+        <span class="n mono">04</span>
+        <img class="val-ico" src="ico-traceable.png" alt="">
+        <h3 data-i18n-en="">Renewable energy</h3><h3 data-i18n-id="">Energi terbarukan</h3>
+        <p data-i18n-en="">Powering industry with lower-emission fuel.</p>
+        <p data-i18n-id="">Menyalakan industri dengan bahan bakar rendah emisi.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS (UV) ============ -->
+<section class="section stats uv-bg" data-nav-dark="">
+  <div class="wrap">
+    <div class="cap-head reveal">
+      <span class="eyebrow" style="color:var(--sg)" data-i18n-en="">By the numbers</span>
+      <span class="eyebrow" style="color:var(--sg)" data-i18n-id="">Dalam angka</span>
+      <div class="section-num" style="color:var(--sg);font-size:clamp(28px,4vw,56px)">(02)</div>
+    </div>
+    <div class="stats-band reveal d1">
+      <div class="stat">
+        <div class="num louize">10<em> TPH</em></div>
+        <div class="lbl" data-i18n-en="">Plant throughput, Lamandau line one.</div>
+        <div class="lbl" data-i18n-id="">Kapasitas pabrik, lini satu Lamandau.</div>
+      </div>
+      <div class="stat">
+        <div class="num louize">500<em>k</em></div>
+        <div class="lbl" data-i18n-en="">Tonnes of pellet capacity per year at full ramp.</div>
+        <div class="lbl" data-i18n-id="">Ton kapasitas pelet per tahun pada kapasitas penuh.</div>
+      </div>
+      <div class="stat">
+        <div class="num louize">≤10<em>%</em></div>
+        <div class="lbl" data-i18n-en="">Moisture content — consistent, batch after batch.</div>
+        <div class="lbl" data-i18n-id="">Kadar air — konsisten, dari batch ke batch.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES ============ -->
+<section class="section values">
+  <div class="wrap">
+    <h2 class="model-title reveal">
+      <span data-i18n-en="">What we stand on</span>
+      <span data-i18n-id="">Nilai yang kami pegang</span>
+    </h2>
+    <div class="values-grid reveal d1">
+      <div class="v">
+        <img class="val-ico" src="ico-reliable.png" alt="">
+        <h3 data-i18n-en="">Reliable</h3><h3 data-i18n-id="">Andal</h3>
+        <p data-i18n-en="">Consistent quality and supply our partners can plan around.</p>
+        <p data-i18n-id="">Kualitas dan pasokan konsisten yang dapat diandalkan mitra kami.</p>
+      </div>
+      <div class="v">
+        <img class="val-ico" src="ico-traceable.png" alt="">
+        <h3 data-i18n-en="">Traceable</h3><h3 data-i18n-id="">Terlacak</h3>
+        <p data-i18n-en="">Every batch tracked from feedstock source to shipment.</p>
+        <p data-i18n-id="">Setiap batch terlacak dari sumber bahan baku ke pengiriman.</p>
+      </div>
+      <div class="v">
+        <img class="val-ico" src="ico-sustainable.png" alt="">
+        <h3 data-i18n-en="">Sustainable</h3><h3 data-i18n-id="">Berkelanjutan</h3>
+        <p data-i18n-en="">A circular model — less waste, lower emissions, real impact.</p>
+        <p data-i18n-id="">Model sirkular — lebih sedikit limbah, emisi lebih rendah, dampak nyata.</p>
+      </div>
+    </div>
+    <div class="bigword-row" style="margin-top:clamp(40px,6vw,90px)">
+      <div class="bigword clipword"><span data-i18n-en="">FUTURA</span><span data-i18n-id="">FUTURA</span></div>
+      <div class="section-num" style="font-size:clamp(28px,4vw,56px)">(03)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-nav-dark="">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <h2 class="fc-head">
+        <span data-i18n-en="">Looking for a <span class="fc-rotate" data-words="reliable, traceable, sustainable, consistent, certified">reliable</span><br>biomass partner?<span class="fc-glyph">/-$</span></span>
+        <span data-i18n-id="">Mencari mitra biomassa<br>yang <span class="fc-rotate" data-words="andal, terlacak, lestari, konsisten, tepat">andal</span>?<span class="fc-glyph">/-$</span></span>
+      </h2>
+      <a class="fc-contact" href="contact.html">&ldquo;Contact&rdquo;</a>
+    </div>
+
+    <div class="footer-main">
+      <div class="fm-brand">
+        <img src="logo-bone.png" alt="SUAR">
+        <span class="fm-sub">PT SUAR ENERGI FUTURA</span>
+      </div>
+      <div class="fm-right">
+        <div class="fm-cols">
+          <div class="fm-col">
+            <h4 data-i18n-en="">Company</h4><h4 data-i18n-id="">Perusahaan</h4>
+            <a href="about.html">About</a>
+            <a href="services.html">Service</a>
+            <a href="news.html">News</a>
+            <a href="#">Technology</a>
+          </div>
+          <div class="fm-col">
+            <h4 data-i18n-en="">Application</h4><h4 data-i18n-id="">Aplikasi</h4>
+            <a href="#">Career</a>
+            <a href="#">Factory</a>
+            <a href="#">Work Wear</a>
+          </div>
+          <div class="fm-col">
+            <h4 data-i18n-en="">Contact</h4><h4 data-i18n-id="">Kontak</h4>
+            <a href="mailto:contact@suar.earth">Contact@suar.earth</a>
+            <a href="contact.html">Office</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank" rel="noopener">LINKEDIN</a>
+          <a href="#" target="_blank" rel="noopener">INSTAGRAM</a>
+          <a href="https://suar.earth" target="_blank" rel="noopener">SUAR.EARTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 SUAR Energi Futura</span>
+      <span>Brand Guideline v0.2</span>
+    </div>
+  </div>
+</footer>
+
+<script src="web-home.js"></script>
+<script src="atoll-fx.js"></script>
+<script src="about-transition.js"></script>
+<script src="story-scroll.js"></script>
+
+<style>
+/* ===== ABOUT-specific ===== */
+/* ===== ABOUT HERO → VIDEO TRANSITION (scroll-pinned morph) =====
+   One #vt-video interpolates from the right-panel rect (p=0) to a full-width
+   banner (p=1); headline/about fade out, "our story" fades in. All via --p. */
+.video-transition {
+  --grid-line-color: var(--hair);
+  --page-inset: 32px;                   /* one consistent inset for video + our story + divider */
+  --pad: var(--page-inset);             /* panel/video inset (same value everywhere) */
+  --indent: clamp(40px,8vw,140px);      /* headline left indent (state 1 only) */
+  --vh1: 20vw;                          /* video height, state 1 */
+  --vh2: clamp(360px,52vh,520px);       /* video height, state 2 (banner) */
+  --p:0; position:relative; height:220vh; background:var(--bn);
+}
+.vt-stage { position:sticky; top:0; height:100vh; overflow:hidden; background:var(--bn); }
+
+/* State 1 · headline (fades + lifts out) */
+.vt-left { position:absolute; top:calc(var(--nav-h) + clamp(44px,9vh,100px)); left:var(--indent);
+  width:calc(69vw - var(--indent) - clamp(20px,3vw,48px));
+  opacity:calc(1 - clamp(0, var(--p) / 0.42, 1)); transform:translateY(calc(-46px * var(--p))); will-change:opacity,transform; }
+.vt-left .eyebrow { display:block; margin-bottom:clamp(20px,3vw,42px); }
+.vt-left .eyebrow[data-i18n-id] { display:none; }
+body.lang-id .vt-left .eyebrow[data-i18n-en] { display:none; }
+body.lang-id .vt-left .eyebrow[data-i18n-id] { display:block; }
+.vt-left h1 { font-family:"Louize Display",serif; font-weight:400; font-size:clamp(46px,7.4vw,132px); line-height:.98; letter-spacing:-.02em; color:var(--uv); }
+.vt-left h1 em { font-style:normal; color:var(--bk); }
+
+/* State 1 · vertical divider + right-panel about text (fade out) */
+.vt-vdiv { position:absolute; left:69vw; top:var(--nav-h); bottom:0; width:1px; background:var(--grid-line-color);
+  opacity:calc(1 - clamp(0, var(--p) / 0.5, 1)); }
+.vt-about1 { position:absolute; left:calc(69vw + var(--pad)); right:var(--pad);
+  top:calc(var(--nav-h) + var(--pad) + var(--vh1) + clamp(14px,1.5vw,24px)); border-top:1px solid var(--grid-line-color); padding-top:clamp(14px,1.5vw,22px);
+  opacity:calc(1 - clamp(0, var(--p) / 0.38, 1)); }
+.ah-about-title { font-family:"Louize Display",serif; font-weight:400; font-size:clamp(24px,2.4vw,40px); line-height:1; color:var(--uv); }
+.ah-about-sub { display:block; font-family:"Catalogue",sans-serif; font-weight:600; font-size:clamp(12px,1vw,14px); letter-spacing:.03em; color:var(--uv); margin-top:7px; }
+.ah-about-sub[data-i18n-id] { display:none; }
+body.lang-id .ah-about-sub[data-i18n-en] { display:none; }
+body.lang-id .ah-about-sub[data-i18n-id] { display:block; }
+.ah-about-body { font-size:clamp(13px,1vw,15px); line-height:1.55; color:var(--ink-soft); margin-top:clamp(16px,2vw,28px); }
+
+/* the single morphing video block */
+.vt-video { position:absolute; z-index:3;
+  top:calc(var(--nav-h) + var(--pad));
+  left:calc(69vw + var(--pad) - 69vw * var(--p));
+  width:calc(31vw - 2 * var(--pad) + 69vw * var(--p));
+  height:calc(var(--vh1) + (var(--vh2) - var(--vh1)) * var(--p));
+  background:var(--uv); border:1px solid var(--uv-deep,#4C4191); display:flex; align-items:center; justify-content:center; will-change:left,width,height; }
+.vt-video .ahv-label { font-family:"Louize Display",serif; font-size:clamp(22px,2.6vw,46px); letter-spacing:.05em; color:var(--bn); }
+
+/* State 2 · our story (full-width divider; content indented, two columns) */
+.vt-story { position:absolute; left:0; right:0; z-index:2;
+  top:calc(var(--nav-h) + var(--page-inset) + var(--vh2) + clamp(22px,3vh,44px));
+  opacity:calc(clamp(0, (var(--p) - 0.55) / 0.4, 1)); transform:translateY(calc(28px * (1 - var(--p)))); will-change:opacity,transform; }
+/* divider matches the video width; the two-column text group is centred on the page */
+.vt-story-inner { width:calc(100% - var(--page-inset) * 2); margin-left:auto; margin-right:auto;
+  border-top:1px solid var(--grid-line-color); padding-top:clamp(28px,3vw,52px);
+  display:grid; grid-template-columns:max-content minmax(0,46ch); justify-content:center; column-gap:clamp(40px,6vw,110px); align-items:start; }
+.vts-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(30px,3.6vw,58px); line-height:.96; letter-spacing:-.03em; color:var(--uv); text-transform:lowercase; }
+.vts-sub { display:block; font-family:"Catalogue",sans-serif; font-weight:600; font-size:clamp(12px,1vw,15px); letter-spacing:.03em; color:var(--uv); margin-top:10px; }
+.vts-sub[data-i18n-id] { display:none; }
+body.lang-id .vts-sub[data-i18n-en] { display:none; }
+body.lang-id .vts-sub[data-i18n-id] { display:block; }
+.vts-body { font-size:clamp(14px,1.15vw,18px); line-height:1.55; color:var(--ink-soft); max-width:44ch; }
+
+.about-photo { height:clamp(300px,42vw,520px); margin-top:8px; position:relative; overflow:hidden; background:#d8d2c2; }
+.about-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.about-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.35)); z-index:1; }
+.about-photo .ph-tag { z-index:2; }
+
+.bigword-row { display:flex; align-items:flex-start; justify-content:space-between; margin-top:clamp(28px,4vw,64px); }
+
+/* ===== OUR STORY · scroll-driven editorial chapters ===== */
+.story-scroll { position:relative; height:calc(var(--n,4) * 100vh); background:var(--bn); border-top:1px solid var(--hair); }
+.ss-stage { position:sticky; top:0; height:100vh; overflow:hidden; }
+.ss-grid { display:grid; grid-template-columns:1fr 1fr; height:100%; }
+/* LEFT · text column */
+.ss-text { position:relative; display:flex; flex-direction:column;
+  padding:calc(var(--nav-h) + clamp(28px,5vh,60px)) clamp(32px,4vw,72px) clamp(28px,4vh,52px) clamp(40px,6vw,110px); }
+.ss-eyebrow { display:flex; align-items:center; gap:10px; font-family:"Catalogue",sans-serif; font-weight:600; font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--uv); }
+.ss-eyebrow .tri { width:10px; height:10px; background:var(--sg); clip-path:polygon(0 0,100% 0,0 100%); flex:none; }
+.ss-eyebrow [data-i18n-id] { display:none; } body.lang-id .ss-eyebrow [data-i18n-en] { display:none; } body.lang-id .ss-eyebrow [data-i18n-id] { display:inline; }
+/* slides stacked; only active shown */
+.ss-slides { position:relative; flex:1; margin-top:clamp(20px,3vh,40px); }
+.ss-slide { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; max-width:52ch;
+  opacity:0; transform:translateY(26px); transition:opacity .6s var(--ease), transform .6s var(--ease); pointer-events:none; }
+.ss-slide.active { opacity:1; transform:none; pointer-events:auto; }
+.ss-no { font-family:"Catalogue",sans-serif; font-weight:600; font-size:clamp(13px,1.1vw,16px); letter-spacing:.14em; color:var(--sg); margin-bottom:clamp(12px,1.4vw,20px); }
+.ss-title { font-family:"Louize Display",serif; font-weight:400; font-size:clamp(38px,5vw,84px); line-height:1; letter-spacing:-.02em; color:var(--uv); }
+.ss-title[data-i18n-id] { display:none; } body.lang-id .ss-title[data-i18n-en] { display:none; } body.lang-id .ss-title[data-i18n-id] { display:block; }
+.ss-desc { font-size:clamp(15px,1.15vw,18px); line-height:1.6; color:var(--ink-soft); max-width:48ch; margin-top:clamp(18px,2vw,28px); }
+.ss-desc[data-i18n-id] { display:none; } body.lang-id .ss-desc[data-i18n-en] { display:none; } body.lang-id .ss-desc[data-i18n-id] { display:block; }
+/* footer: pager + link */
+.ss-foot { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-top:clamp(16px,2vh,28px); }
+.ss-pager { display:flex; gap:10px; }
+.ss-dot { width:clamp(28px,3vw,54px); height:2px; border:0; padding:0; background:rgba(95,82,170,.28); cursor:pointer; transition:background .3s var(--ease); }
+.ss-dot.active { background:var(--sg); }
+.ss-dot:focus-visible { outline:2px solid var(--uv); outline-offset:3px; }
+.ss-link { display:inline-flex; align-items:center; gap:9px; font-family:"Catalogue",sans-serif; font-weight:600; font-size:14px; letter-spacing:.02em; color:var(--uv); text-decoration:none; transition:gap .25s var(--ease); }
+.ss-link .tri { width:9px; height:9px; background:var(--sg); clip-path:polygon(0 0,100% 0,0 100%); transition:transform .25s var(--ease); }
+.ss-link:hover { gap:13px; } .ss-link:hover .tri { transform:translate(2px,-2px); }
+.ss-link [data-i18n-id] { display:none; } body.lang-id .ss-link [data-i18n-en] { display:none; } body.lang-id .ss-link [data-i18n-id] { display:inline; }
+/* RIGHT · media (vertical image transition) */
+.ss-media { position:relative; overflow:hidden; border-left:1px solid var(--hair); background:var(--bn); }
+.ss-img { position:absolute; inset:0; margin:0; overflow:hidden; background:var(--uv);
+  display:grid; place-items:center; transform:translateY(100%); transition:transform .7s var(--ease); will-change:transform; }
+.ss-img[data-i="0"] { transform:translateY(0); }   /* first visible before JS runs */
+.ss-img-label { font-family:"Louize Display",serif; font-size:clamp(60px,10vw,150px); color:rgba(255,253,245,.16); line-height:1; }
+.ss-img img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+@media (prefers-reduced-motion:reduce){ .ss-slide, .ss-img { transition:none; } }
+
+.model-title { font-family:"Catalogue"; font-weight:700; font-size:clamp(26px,3.4vw,46px); letter-spacing:-.03em; margin-bottom:44px; }
+.loop { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--hair); }
+.loop .node { padding:30px 24px 34px; border-left:1px solid var(--hair); display:flex; flex-direction:column; gap:14px; min-height:300px; }
+.loop .node:first-child { border-left:none; padding-left:0; }
+.loop .node .n { font-family:"Louize Display",serif; font-size:24px; color:var(--ink-faint); }
+.loop .node .val-ico { width:52px; height:52px; }
+.loop .node h3 { font-family:"Catalogue"; font-weight:700; font-size:clamp(20px,2vw,27px); letter-spacing:-.02em; color:var(--uv); margin-top:auto; }
+.loop .node p { font-size:15px; line-height:1.5; color:var(--ink-soft); }
+
+.cap-head { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; margin-bottom:48px; }
+.stats-band { display:grid; grid-template-columns:repeat(3,1fr); gap:40px; border-top:1px solid var(--hair-bn); padding-top:48px; }
+.stat .num { font-size:clamp(64px,9vw,150px); line-height:.82; letter-spacing:-.03em; color:var(--bn); }
+.stat .num em { font-style:normal; color:var(--sg); font-size:.5em; }
+.stat .lbl { font-size:15px; line-height:1.4; color:rgba(255,253,245,.78); margin-top:16px; max-width:24ch; }
+
+.values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--hair); border:1px solid var(--hair); }
+.values-grid .v { background:var(--bn); padding:34px 30px; display:flex; flex-direction:column; gap:12px; min-height:230px; }
+.values-grid .v .val-ico { width:50px; height:50px; }
+.values-grid .v h3 { font-family:"Catalogue"; font-weight:700; font-size:22px; letter-spacing:-.02em; color:var(--uv); margin-top:auto; }
+.values-grid .v p { font-size:15px; line-height:1.5; color:var(--ink-soft); }
+
+@media (max-width:900px){
+  /* video transition → static stacked (no pin): headline, video banner, our story */
+  .video-transition { height:auto; }
+  .vt-stage { position:static; height:auto; overflow:visible; display:flex; flex-direction:column; }
+  .vt-left { position:static; width:auto; transform:none; opacity:1 !important;
+    padding:calc(var(--nav-h) + clamp(28px,7vw,44px)) var(--gutter) clamp(22px,6vw,34px); }
+  .vt-vdiv { display:none; }
+  .vt-about1 { display:none; }   /* our story below carries the narrative on mobile */
+  .vt-video { position:static; width:auto; height:auto; aspect-ratio:16/10; margin:0 var(--gutter); }
+  .vt-story { position:static; transform:none; opacity:1 !important; margin-top:clamp(24px,7vw,40px); }
+  .vt-story-inner { width:auto; margin:0; border-top:0; grid-template-columns:1fr; gap:14px; padding:clamp(18px,5vw,28px) var(--gutter) clamp(28px,7vw,44px); }
+  /* scroll story → image strip on top, text below (keeps the sticky interaction) */
+  .ss-grid { grid-template-columns:1fr; grid-template-rows:40vh 1fr; }
+  .ss-media { border-left:0; border-bottom:1px solid var(--hair); }
+  .ss-img-label { font-size:clamp(48px,16vw,90px); }
+  .ss-text { padding:clamp(20px,5vw,32px) var(--gutter) clamp(20px,5vw,30px); }
+  .ss-title { font-size:clamp(32px,9vw,52px); }
+  .loop { grid-template-columns:1fr 1fr; }
+  .loop .node { border-left:none; border-top:1px solid var(--hair); padding-left:0; min-height:auto; }
+  .loop .node:nth-child(odd) { padding-right:18px; }
+  .stats-band, .values-grid { grid-template-columns:1fr; }
+  .values-grid .v { min-height:auto; }
+}
+</style>
+
+</body></html>

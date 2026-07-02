@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<template id="__bundler_thumbnail" data-bg-color="#5F52AA">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#5F52AA"/>
+    <text x="600" y="430" font-family="Georgia, serif" font-size="150" font-weight="700" letter-spacing="-6" text-anchor="middle" fill="#FFFDF5">SUAR</text>
+    <circle cx="600" cy="520" r="13" fill="#FFC933"/>
+  </svg>
+</template>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SUAR Energi Futura — Powering the future from what's left</title>
+<meta name="description" content="SUAR turns agricultural biomass residue into renewable pellet feedstock — lower-emission energy from empty fruit bunches.">
+<link rel="stylesheet" href="site.css">
+
+</head>
+<body data-nav-page="index.html" class="loading reg-balanced atm-breeze">
+
+<!-- ============ INTRO LOADER ============ -->
+<div id="loader" class="loader">
+  <div class="loader-mark"><img src="logo-bone.png" alt="SUAR"></div>
+  <div class="loader-count"><span>0</span></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a class="brand" href="index.html"><img class="brand-uv" src="logo-uv.png" alt="SUAR"><img class="brand-dark" src="logo-sg.png" alt=""></a>
+  <div class="links">
+    <a data-page="about.html" href="about.html"><span class="tick">▼</span><span class="lbl">about</span></a>
+    <a data-page="project.html" href="project.html"><span class="tick">▼</span><span class="lbl">project</span></a>
+    <a data-page="services.html" href="services.html"><span class="tick">▼</span><span class="lbl">services</span></a>
+    <a data-page="product.html" href="product.html"><span class="tick">▼</span><span class="lbl">product</span></a>
+    <a data-page="contact.html" href="contact.html"><span class="tick">▼</span><span class="lbl">contact</span></a>
+    <span class="lang">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="id">ID</button>
+    </span>
+  </div>
+</nav>
+
+<!-- ============ HERO TRANSITION (scroll-driven Artboard1 → Artboard7) ============ -->
+<!-- HeroTransition: tall scroll track; HeroStage is pinned and morphs via --p -->
+<header class="hero-transition" id="hero-transition">
+  <div class="hero-stage" id="hero-stage">
+
+    <!-- SuarLogoBlock -->
+    <div class="ht-logo"><img src="logo-hero.png" alt="SUAR"></div>
+
+    <!-- vertical divider (Artboard 1) -->
+    <div class="ht-divider" aria-hidden="true"></div>
+
+    <!-- HeroHeadline · two variants cross-dissolve in place -->
+    <div class="ht-headline louize">
+      <div class="hh-open" aria-hidden="true">
+        <span data-i18n-en="">What&rsquo;s<br>thrown<br>away now<br>lights the way.</span>
+        <span data-i18n-id="">Yang<br>terbuang<br>kini menyalakan<br>jalan.</span>
+      </div>
+      <h1 class="hh-compact">
+        <span data-i18n-en="">What&rsquo;s thrown away now<br>lights the way.</span>
+        <span data-i18n-id="">Yang terbuang kini<br>menyalakan jalan.</span>
+      </h1>
+    </div>
+
+    <!-- TickerMarquee · yellow strip (bottom → divider) -->
+    <div class="ht-ticker" aria-hidden="true">
+      <div class="ht-ticker-track">
+        <span>Powering the future from what&rsquo;s left behind</span>
+        <span>Powering the future from what&rsquo;s left behind</span>
+        <span>Powering the future from what&rsquo;s left behind</span>
+        <span>Powering the future from what&rsquo;s left behind</span>
+      </div>
+    </div>
+
+    <!-- PelletImageReveal · rises from the bottom -->
+    <div class="ht-image">
+      <img src="hero-pellet.jpg" alt="SUAR biomass pellets made from empty fruit bunch">
+    </div>
+
+  </div>
+</header>
+
+<!-- ============ INTRO (UV) ============ -->
+<section class="intro uv-bg" data-nav-dark="">
+  <div class="wrap intro-grid">
+    <div class="intro-eyebrow reveal">
+      <span class="eyebrow" style="color:var(--sg)" data-i18n-en="">Powering the future from what's left</span>
+      <span class="eyebrow" style="color:var(--sg)" data-i18n-id="">Menyalakan masa depan dari yang tersisa</span>
+    </div>
+    <div class="intro-body reveal d1">
+      <p data-i18n-en="">SUAR Pellets are biomass fuels made from empty fruit bunches (EFB), a byproduct of palm oil production. Waste that would otherwise decompose or burn in open fields is processed into dense, high-caloric pellets for industrial use. A renewable solid fuel that replaces coal, with lower emissions and a traceable supply chain.</p>
+      <p data-i18n-id="">SUAR Pellet adalah bahan bakar biomassa dari tandan kosong kelapa sawit (EFB), produk sampingan industri sawit. Limbah yang seharusnya membusuk atau terbakar di ladang terbuka diolah menjadi pelet padat berkalori tinggi untuk industri. Bahan bakar padat terbarukan yang menggantikan batu bara, dengan emisi lebih rendah dan rantai pasok yang terlacak.</p>
+    </div>
+  </div>
+  <div class="wrap bigword-row">
+    <div class="bigword clipword" style="color:var(--bn)"><span style="padding: 0px 0px 5px">BIOMASS</span></div>
+    <div class="section-num" style="color:var(--sg);font-size:clamp(28px,4vw,56px)">(01)</div>
+  </div>
+</section>
+
+<!-- ============ SETTING US APART (FeatureSection) ============ -->
+<section class="section feature-section" id="setting-us-apart">
+  <div class="wrap">
+    <header class="fs-head reveal">
+      <h2 class="fs-title"><span data-i18n-en="">setting us apart</span><span data-i18n-id="">yang membuat kami beda</span></h2>
+    </header>
+    <!-- FeatureRows are rendered from the FEATURES data array in feature-section.js -->
+    <div class="fs-rows" id="fs-rows" role="list"></div>
+  </div>
+</section>
+<!-- FeatureDetailPanel (#feature-detail) is injected into <body> by feature-section.js -->
+
+<!-- ============ CAPACITY ============ -->
+<section class="section capacity uv-bg" data-nav-dark="">
+  <div class="wrap">
+    <p class="cap-intro louize reveal">
+      <span data-i18n-en="">Capacity, in practice — <span class="cat">90,000</span> tonnes of certified biomass pellets a year, designed to ramp steadily toward supply&#8209;chain partners and the demand ahead.</span>
+      <span data-i18n-id="">Kapasitas, dalam praktik — <span class="cat">90.000</span> ton pelet biomassa bersertifikat per tahun, dirancang meningkat bertahap untuk mitra rantai pasok dan permintaan ke depan.</span>
+    </p>
+
+    <div class="cap-selector reveal d1" id="cap-selector" role="tablist" aria-label="Production facility"></div>
+  </div>
+</section>
+
+<!-- ============ CARBON COMPARISON · coal vs EFB pellet ============ -->
+<section class="emission" id="emission" data-nav-dark="">
+    <div class="em-compare" id="em-compare" role="slider" tabindex="0"
+         aria-label="Coal versus EFB pellet carbon emissions" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+      <!-- BEFORE · coal (base layer, content hugs the right) -->
+      <div class="ec-before">
+        <div class="ec-panel ec-coal">
+          <div class="ec-fuel"><span class="ec-dot"></span><span data-i18n-en="">Coal</span><span data-i18n-id="">Batu Bara</span></div>
+          <div class="ec-metric">
+            <div class="ec-num cat">95</div>
+            <div class="ec-unit mono">kg CO&#8322; / GJ</div>
+            <div class="ec-cap"><span data-i18n-en="">Fossil carbon, released for good</span><span data-i18n-id="">Karbon fosil, terlepas permanen</span></div>
+          </div>
+          <ul class="ec-tags">
+            <li data-i18n-en="">Sulfur + heavy metals</li><li data-i18n-id="">Belerang + logam berat</li>
+            <li data-i18n-en="">Finite reserve</li><li data-i18n-id="">Cadangan terbatas</li>
+            <li data-i18n-en="">Extracted</li><li data-i18n-id="">Ditambang</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AFTER · EFB pellet (clipped to the left, content hugs the left) -->
+      <div class="ec-after">
+        <div class="ec-panel ec-efb">
+          <div class="ec-fuel"><span class="ec-dot"></span><span data-i18n-en="">EFB Pellet</span><span data-i18n-id="">Pelet TKKS</span></div>
+          <div class="ec-metric">
+            <div class="ec-num cat">&asymp;0</div>
+            <div class="ec-unit mono"><span data-i18n-en="">net fossil CO&#8322;</span><span data-i18n-id="">CO&#8322; fosil neto</span></div>
+            <div class="ec-cap"><span data-i18n-en="">Biogenic carbon, recently captured</span><span data-i18n-id="">Karbon biogenik, baru terserap</span></div>
+          </div>
+          <ul class="ec-tags">
+            <li data-i18n-en="">Low chlorine + sulfur</li><li data-i18n-id="">Klorin + belerang rendah</li>
+            <li data-i18n-en="">Renewable residue</li><li data-i18n-id="">Residu terbarukan</li>
+            <li data-i18n-en="">Traceable</li><li data-i18n-id="">Terlacak</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- divider + knob -->
+      <div class="ec-handle" aria-hidden="true">
+        <div class="ec-knob">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="10 7 5 12 10 17"></polyline><polyline points="14 7 19 12 14 17"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <div class="ec-hint" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 4 12 9 18"></polyline><polyline points="15 6 20 12 15 18"></polyline></svg>
+        <span data-i18n-en="">Drag to compare</span><span data-i18n-id="">Geser untuk membandingkan</span>
+      </div>
+
+      <p class="ec-note">
+        <span data-i18n-en="">Illustrative, combustion-CO&#8322; basis — biomass returns biogenic carbon from the short carbon cycle; coal releases fossil carbon locked away for ages.</span>
+        <span data-i18n-id="">Ilustratif, basis CO&#8322; pembakaran — biomassa melepas karbon biogenik dari siklus karbon pendek; batu bara melepas karbon fosil yang tersimpan jutaan tahun.</span>
+      </p>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-nav-dark="">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <h2 class="fc-head">
+        <span data-i18n-en="">Looking for a <span class="fc-rotate" data-words="reliable, traceable, sustainable, consistent, certified">reliable</span><br>biomass partner?<span class="fc-glyph">/-$</span></span>
+        <span data-i18n-id="">Mencari mitra biomassa<br>yang <span class="fc-rotate" data-words="andal, terlacak, lestari, konsisten, tepat">andal</span>?<span class="fc-glyph">/-$</span></span>
+      </h2>
+      <a class="fc-contact" href="contact.html">&ldquo;Contact&rdquo;</a>
+    </div>
+
+    <div class="footer-main">
+      <div class="fm-brand">
+        <img src="logo-bone.png" alt="SUAR">
+        <span class="fm-sub">PT SUAR ENERGI FUTURA</span>
+      </div>
+      <div class="fm-right">
+        <div class="fm-cols">
+          <div class="fm-col">
+            <h4 data-i18n-en="">Company</h4><h4 data-i18n-id="">Perusahaan</h4>
+            <a href="about.html">About</a>
+            <a href="services.html">Service</a>
+            <a href="news.html">News</a>
+            <a href="#">Technology</a>
+          </div>
+          <div class="fm-col">
+            <h4 data-i18n-en="">Application</h4><h4 data-i18n-id="">Aplikasi</h4>
+            <a href="#">Career</a>
+            <a href="#">Factory</a>
+            <a href="#">Work Wear</a>
+          </div>
+          <div class="fm-col">
+            <h4 data-i18n-en="">Contact</h4><h4 data-i18n-id="">Kontak</h4>
+            <a href="mailto:contact@suar.earth">Contact@suar.earth</a>
+            <a href="contact.html">Office</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank" rel="noopener">LINKEDIN</a>
+          <a href="#" target="_blank" rel="noopener">INSTAGRAM</a>
+          <a href="https://suar.earth" target="_blank" rel="noopener">SUAR.EARTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 SUAR Energi Futura</span>
+      <span>Brand Guideline v0.2</span>
+    </div>
+  </div>
+</footer>
+
+<script src="web-home.js"></script>
+<script src="atoll-fx.js"></script>
+<script src="hero-transition.js"></script>
+<script src="feature-section.js"></script>
+<script src="capacity-selector.js"></script>
+<script src="emission-compare.js"></script>
+<!-- design-tool "Tweaks" editing panel (React/Babel + *.jsx) removed for the standalone
+     site preview: it is claude.ai/design editor chrome, not part of the website. Its
+     default state (reg-balanced / atm-breeze / --sg Sun Glow) is baked into site.css
+     :root and the body class above, so the page renders identically without it. -->
+
+<style>
+/* ===== HOME-specific ===== */
+/* ===== TWEAK HOOKS — Editorial Register / Accent Climate / Atmosphere ===== */
+.bigword { font-size:calc(clamp(64px,15vw,260px) * var(--bigword-scale,1)); }
+.brush-band { animation-duration:var(--band-dur,30s); }
+.band-track { animation-duration:var(--bandtext-dur,28s); }
+/* Register: how assertive the page reads */
+body.reg-quiet    { --grid-alpha:.018; --bigword-scale:.66; }
+body.reg-balanced { --grid-alpha:.055; --bigword-scale:1; }
+body.reg-bold     { --grid-alpha:.12;  --bigword-scale:1.32; }
+body.reg-quiet .brush-band { height:clamp(20px,2.4vw,30px); opacity:.5; }
+body.reg-quiet .band-track { opacity:0; }
+body.reg-bold  .brush-band { height:clamp(48px,6vw,82px); }
+body.reg-bold  .band-track span { font-size:clamp(20px,2.4vw,30px); }
+body.reg-quiet .intro { padding-top:clamp(80px,11vw,170px); padding-bottom:clamp(56px,7vw,100px); }
+body.reg-bold  .intro-body p { font-weight:500; }
+body.reg-bold  .diff-k h3 { font-size:clamp(28px,3.2vw,46px); }
+/* Atmosphere: motion stillness vs flow */
+body.atm-still   { --marq-dur:0s; --band-dur:0s; --bandtext-dur:0s; --reveal-dur:.45s; }
+body.atm-still .brush-band, body.atm-still .band-track, body.atm-still .marquee-track, body.atm-still .pi-dot { animation-play-state:paused; }
+body.atm-breeze  { --marq-dur:32s; --band-dur:30s; --bandtext-dur:28s; --reveal-dur:.8s; }
+body.atm-flowing { --marq-dur:15s; --band-dur:14s; --bandtext-dur:13s; --reveal-dur:1.15s; }
+/* moving quote band */
+.quote-marquee { border-bottom:none; }
+.quote-marquee .marquee-track { gap:0; padding:18px 0; }
+.quote-marquee .marquee-track span { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(22px,3.2vw,44px); letter-spacing:-.01em; text-transform:uppercase; color:var(--uv); }
+.quote-marquee .marquee-track span::after { content:"✳"; margin:0 clamp(28px,4vw,60px); color:var(--sg); font-size:.6em; vertical-align:middle; }
+/* UV brush band divider */
+.brush-band { position:relative; height:clamp(34px,4.2vw,56px); background:url("brush-tile.svg") repeat-x center/auto 100%; border-bottom:1px solid var(--hair); animation:brush-drift 30s linear infinite; overflow:hidden; }
+@keyframes brush-drift { to { background-position-x:-378px; } }
+.band-track { position:absolute; inset:0; display:flex; align-items:center; gap:0; white-space:nowrap; width:max-content; animation:band-rev 28s linear infinite; }
+.band-track span { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(16px,1.8vw,22px); letter-spacing:.04em; text-transform:uppercase; color:var(--uv); }
+.band-track span::after { content:"✳"; margin:0 clamp(18px,2.4vw,34px); color:var(--uv); font-size:.7em; vertical-align:middle; }
+@keyframes band-rev { from { transform:translateX(-50%); } to { transform:translateX(0); } }
+@media (prefers-reduced-motion:reduce){ .brush-band, .band-track{ animation:none; } }
+/* ===== HERO TRANSITION (scroll-driven Artboard1 → Artboard7) =====
+   One pinned stage; all elements morph via the single --p variable (0..1),
+   interpolated in CSS calc(). Element layout is anchored to the Artboard-7
+   geometry as a base, then offset back toward Artboard-1 by (1 - p). */
+.hero-transition { position:relative; height:250vh; background:var(--bn); --p:0; }
+.hero-stage { position:sticky; top:0; height:100vh; overflow:hidden; background:var(--bn); }
+
+/* SuarLogoBlock — AB1: centred in left half · AB7: up + smaller, top-left */
+.ht-logo { position:absolute; left:0; top:0; width:50vw; height:100vh; display:flex; align-items:center; justify-content:center;
+  padding:0 clamp(36px,5vw,90px);
+  transform:translateY(calc(-26vh * var(--p))) scale(calc(1 - 0.40 * var(--p)));
+  transform-origin:center top; will-change:transform; }
+.ht-logo img { width:100%; height:auto; max-height:46vh; object-fit:contain; display:block; }
+
+/* vertical divider — fades as the ticker takes the dividing role */
+.ht-divider { position:absolute; left:50vw; top:clamp(64px,9vh,120px); bottom:0; width:1px; background:var(--hair);
+  opacity:calc(1 - var(--p)); }
+
+/* HeroHeadline — right column; two variants cross-dissolve in place */
+.ht-headline { position:absolute; left:50vw; right:0; top:0; height:100vh;
+  display:grid; align-content:center; padding:0 clamp(36px,5vw,72px);
+  color:var(--uv); text-transform:uppercase; letter-spacing:-.01em;
+  transform:translateY(calc(-22vh * var(--p))); will-change:transform; }
+.ht-headline .hh-open, .ht-headline .hh-compact { grid-area:1/1; margin:0; align-self:start; justify-self:start; }   /* overlay both variants from a shared top-left origin */
+.hh-open { font-size:clamp(34px,4.9vw,80px); line-height:.98; opacity:clamp(0, (0.55 - var(--p)) / 0.22, 1); }
+.hh-compact { font-size:clamp(26px,3.4vw,52px); line-height:1.02; opacity:clamp(0, (var(--p) - 0.34) / 0.22, 1); }
+
+/* TickerMarquee — AB1 bottom · AB7 ~34vh divider; rises with (1-p) */
+/* previous design: running text ABOVE the Sun Glow brush iconography */
+.ht-ticker { position:absolute; left:0; right:0; top:34vh; height:clamp(40px,5vh,60px); z-index:4;
+  background:url("brush-tile.svg") repeat-x center/auto 100%; display:flex; align-items:center; overflow:hidden;
+  animation:brush-drift 30s linear infinite;
+  transform:translateY(calc((100vh - 34vh - clamp(40px,5vh,60px)) * (1 - var(--p)))); will-change:transform; }
+.ht-ticker-track { display:flex; white-space:nowrap; width:max-content; animation:ht-march 26s linear infinite reverse; }   /* runs opposite to the brush drift */
+.ht-ticker-track span { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(13px,1.5vw,18px); letter-spacing:.04em; text-transform:uppercase; color:var(--uv); padding:0 clamp(20px,2.4vw,40px); }
+.ht-ticker-track span::after { content:"✳"; margin-left:clamp(40px,4.8vw,80px); color:var(--uv); font-size:.7em; vertical-align:middle; }
+@keyframes ht-march { from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+/* PelletImageReveal — fills the lower section, clip-reveals from the bottom */
+.ht-image { position:absolute; left:0; right:0; bottom:0; top:calc(34vh + clamp(40px,5vh,60px)); overflow:hidden; background:#d8d2c2;
+  clip-path:inset(calc(100% * (1 - var(--p))) 0 0 0); will-change:clip-path; }
+.ht-image img { width:100%; height:100%; object-fit:cover; display:block;
+  transform:translateY(calc(34px * (1 - var(--p)))) scale(1.04); }
+
+@media (prefers-reduced-motion:reduce){
+  .ht-ticker, .ht-ticker-track { animation:none; }
+}
+
+.intro { padding:clamp(56px,8vw,120px) 0 clamp(40px,5vw,72px); }
+.intro-grid { display:grid; grid-template-columns:1fr 1.6fr; gap:40px; align-items:start; }
+.intro-body p { font-size:clamp(18px,2vw,27px); line-height:1.45; font-weight:400; color:rgba(255,253,245,.92); max-width:30ch; }
+.intro-body p[data-i18n-id] { max-width:34ch; }
+.bigword-row { display:flex; align-items:flex-start; justify-content:space-between; margin-top:clamp(24px,4vw,60px); }
+
+/* ===== SETTING US APART — FeatureSection (scroll-driven rows + detail) ===== */
+.feature-section { position:relative; }
+.fs-head { display:flex; justify-content:flex-end; margin-bottom:clamp(22px,3.4vw,54px); }
+.fs-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(40px,8.5vw,140px); line-height:.84; letter-spacing:-.045em; color:var(--uv); text-align:right; text-transform:lowercase; }
+
+.fs-rows { display:flex; flex-direction:column; border-top:1px solid rgba(95,82,170,.30); }
+.feature-row { display:grid; grid-template-columns:minmax(0,1fr) clamp(300px,52%,760px); gap:clamp(24px,4vw,60px); align-items:start; border-bottom:1px solid rgba(95,82,170,.30); padding:clamp(20px,2.3vw,32px) 0; cursor:pointer; transition:padding .55s var(--ease); }
+.fr-left { display:flex; flex-direction:column; min-width:0; }
+.fr-head { display:flex; align-items:center; gap:14px; margin-bottom:clamp(10px,1.2vw,18px); }
+.fr-icon { width:clamp(38px,3.4vw,54px); height:auto; flex:none; opacity:.55; transform:translateY(2px); transition:opacity .5s var(--ease), width .5s var(--ease); }
+.feature-row.active .fr-icon { opacity:1; }
+.feature-no { font-size:13px; letter-spacing:.2em; color:var(--ink-faint); }
+.feature-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,58px); line-height:.96; letter-spacing:-.03em; color:var(--uv); text-transform:uppercase; transition:transform .5s var(--ease); }
+.fr-cat { font-size:12px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-faint); margin-top:10px; }
+.fr-context { display:grid; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .55s var(--ease), opacity .45s var(--ease), margin .5s var(--ease); }
+.fr-context-inner { overflow:hidden; min-height:0; }
+.feature-row.active .fr-context { grid-template-rows:1fr; opacity:1; margin-top:clamp(16px,1.6vw,24px); }
+.fr-context p { font-size:clamp(15px,1.1vw,18px); line-height:1.55; color:var(--ink-soft); max-width:48ch; margin-bottom:14px; }
+.fr-context ul { list-style:none; display:flex; flex-direction:column; gap:7px; margin-bottom:18px; }
+.fr-context li { position:relative; padding-left:18px; font-size:14px; font-weight:500; color:var(--bk); }
+.fr-context li::before { content:"▸"; position:absolute; left:0; color:var(--sg); }
+.fr-open { display:inline-flex; align-items:center; gap:8px; font-family:"Catalogue"; font-weight:600; font-size:15px; color:var(--uv); background:none; border:none; padding:0; cursor:pointer; }
+.fr-open:hover { color:var(--bk); }
+
+.feature-visual-tab { appearance:none; border:none; margin:0; padding:0; cursor:pointer; position:relative; width:100%; display:block; background:var(--uv); border-radius:3px; overflow:hidden; height:clamp(116px,15vw,190px); transition:height .6s var(--ease), filter .45s var(--ease); }
+.feature-visual-tab .fvt-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.feature-visual-tab::after { content:""; position:absolute; inset:0; background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(25,20,60,.30)); pointer-events:none; }
+.feature-visual-tab .fvt-no { position:absolute; left:clamp(16px,1.5vw,26px); top:clamp(10px,1.1vw,18px); z-index:1; font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(30px,3vw,56px); color:rgba(255,253,245,.24); letter-spacing:-.03em; }
+.feature-visual-tab .fvt-cue { position:absolute; right:clamp(14px,1.4vw,22px); bottom:clamp(12px,1.2vw,18px); z-index:1; font-family:"Catalogue"; font-weight:600; font-size:13px; letter-spacing:.04em; color:var(--bn); opacity:0; transform:translateY(6px); transition:opacity .4s, transform .4s var(--ease); }
+.feature-row.active .feature-visual-tab { height:clamp(230px,32vw,420px); }
+.feature-row.active .feature-visual-tab .fvt-cue { opacity:1; transform:none; }
+.feature-row:not(.active) .feature-visual-tab { filter:saturate(.82) brightness(.99); }
+.feature-row:not(.active):hover .feature-title { transform:translateX(6px); }
+
+/* ----- FeatureDetailPanel (fixed overlay) ----- */
+html.detail-open, html.detail-open body { overflow:hidden; }
+.feature-detail { position:fixed; inset:0; z-index:4000; background:var(--bn); overflow-y:auto; -webkit-overflow-scrolling:touch; opacity:0; visibility:hidden; transition:opacity .4s var(--ease), visibility .4s; }
+.feature-detail.open { opacity:1; visibility:visible; }
+.fd-bar { position:sticky; top:0; z-index:2; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px clamp(24px,4vw,64px); background:rgba(255,253,245,.92); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border-bottom:1px solid rgba(95,82,170,.30); }
+.fd-back { display:inline-flex; align-items:center; gap:10px; font-family:"Catalogue"; font-weight:600; font-size:15px; color:var(--uv); background:none; border:none; cursor:pointer; }
+.fd-back:hover { color:var(--bk); }
+.fd-close { font-family:"Catalogue"; font-weight:600; font-size:13px; letter-spacing:.04em; color:var(--ink-soft); background:none; border:1px solid var(--hair); border-radius:100px; padding:8px 16px; cursor:pointer; }
+.fd-close:hover { border-color:var(--uv); color:var(--uv); }
+.fd-body { max-width:var(--maxw); margin:0 auto; padding:clamp(30px,5vw,68px) clamp(24px,4vw,64px) clamp(60px,8vw,120px); }
+.fd-eyebrow { display:block; font-size:13px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-faint); }
+.fd-icon { display:block; width:clamp(56px,6vw,88px); height:auto; margin:18px 0 4px; }
+.fd-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(40px,7vw,110px); line-height:.9; letter-spacing:-.04em; color:var(--uv); text-transform:uppercase; margin:12px 0 clamp(26px,4vw,50px); }
+.fd-hero { width:100%; aspect-ratio:16/9; background:var(--uv); border-radius:4px; overflow:hidden; position:relative; margin-bottom:clamp(30px,5vw,60px); display:flex; align-items:center; justify-content:center; }
+.fd-hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.fd-hero .fd-hero-no { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(80px,16vw,260px); color:rgba(255,253,245,.18); letter-spacing:-.04em; }
+.fd-grid { display:grid; grid-template-columns:1.4fr 1fr; gap:clamp(30px,5vw,72px); align-items:start; }
+.fd-lead { font-family:"Louize Display",Georgia,serif; font-weight:400; font-size:clamp(22px,2.4vw,34px); line-height:1.3; color:var(--bk); margin-bottom:22px; }
+.fd-text p { font-size:clamp(15px,1.15vw,18px); line-height:1.6; color:var(--ink-soft); margin-bottom:16px; }
+.fd-points { list-style:none; border-top:1px solid rgba(95,82,170,.3); }
+.fd-points li { display:flex; gap:14px; padding:15px 0; border-bottom:1px solid rgba(95,82,170,.18); font-size:15px; color:var(--bk); }
+.fd-points li .pn { color:var(--sg); font-weight:700; font-feature-settings:"tnum"; }
+.fd-gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:clamp(38px,5vw,72px); }
+.fd-gallery .gph { aspect-ratio:4/3; background:var(--uv); border-radius:3px; opacity:.92; }
+@media (prefers-reduced-motion:reduce){ .feature-row,.feature-visual-tab,.fr-context,.feature-title,.feature-detail{ transition:none; } }
+
+/* ----- Capacity · full-page: serif intro + flat interactive column accordion ----- */
+.capacity { min-height:100svh; padding:0; display:flex; align-items:stretch; }
+.capacity > .wrap { display:flex; flex-direction:column; justify-content:center; width:100%;
+  padding-top:calc(var(--nav-h) + clamp(24px,4vh,56px)); padding-bottom:clamp(32px,5vh,64px); }
+.cap-intro { font-family:"Louize Display","Louize",Georgia,serif; font-weight:400; font-size:clamp(22px,2.9vw,42px); line-height:1.32; letter-spacing:-.01em; color:var(--bn); max-width:30ch; margin-bottom:clamp(28px,4vh,56px); }
+.cap-intro .cat { font-family:"Catalogue",sans-serif; font-weight:700; color:var(--sg); letter-spacing:-.02em; font-feature-settings:"liga" 1,"dlig" 1,"clig" 1,"calt" 1; }
+
+.cap-selector { display:flex; gap:0; width:100%; flex:1 1 auto; height:auto; min-height:clamp(340px,50vh,580px); align-items:stretch; border-top:1px solid var(--hair-bn); }
+.cap-opt {
+  position:relative; flex:1 1 0%; min-width:0; overflow:hidden; isolation:isolate;
+  border:0; border-left:1px solid var(--hair-bn); background:transparent; cursor:pointer;
+  padding:clamp(22px,2.2vw,38px); color:var(--bn); text-align:left;
+  opacity:0; transform:translateY(26px);
+  transition:flex-grow .7s var(--ease), opacity .6s var(--ease), transform .6s var(--ease), background .5s var(--ease);
+}
+.cap-opt:first-child { border-left:0; }
+.cap-opt.in { opacity:1; transform:translateY(0); }
+.cap-opt.active { flex-grow:2.9; background:rgba(255,253,245,.05); }
+.cap-opt.is-data.active { background:rgba(255,201,51,.06); }
+.cap-opt:focus-visible { outline:2px solid var(--sg); outline-offset:-3px; }
+
+/* resting view: circle icon + label */
+.cs-rest { position:absolute; inset:0; padding:inherit; display:flex; flex-direction:column; align-items:flex-start; gap:clamp(16px,2vw,26px);
+  opacity:1; transition:opacity .45s var(--ease); }
+.cap-opt.active .cs-rest { opacity:0; pointer-events:none; }
+.cs-circle { width:clamp(48px,4.4vw,68px); height:clamp(48px,4.4vw,68px); border:1px solid rgba(255,253,245,.6); border-radius:50%; display:grid; place-items:center; flex:none; transition:border-color .4s var(--ease); }
+.cs-circle img { width:54%; height:54%; object-fit:contain; }
+.cap-opt:hover .cs-circle { border-color:var(--sg); }
+.cs-label { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(15px,1.2vw,18px); letter-spacing:.04em; text-transform:uppercase; color:var(--bn); line-height:1.15; }
+
+/* active view: big headline + sub + Learn More */
+.cs-active { position:absolute; inset:0; padding:inherit; display:flex; flex-direction:column; justify-content:flex-start;
+  opacity:0; pointer-events:none; transition:opacity .5s var(--ease) .12s; }
+.cap-opt.active .cs-active { opacity:1; pointer-events:auto; }
+.cs-h { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(38px,4.6vw,80px); line-height:.92; letter-spacing:-.035em; color:var(--bn); }
+.cs-asub { margin-top:clamp(10px,1.2vw,16px); font-size:clamp(14px,1.15vw,17px); line-height:1.5; color:rgba(255,253,245,.78); max-width:34ch; }
+.cs-more { margin-top:auto; padding-top:clamp(20px,2.4vw,34px); display:inline-flex; align-items:center; gap:8px; align-self:flex-start;
+  font-size:15px; font-weight:600; color:var(--bn); text-decoration:none; transition:gap .3s var(--ease), color .3s var(--ease); }
+.cs-more::after { content:""; width:9px; height:9px; background:var(--sg); clip-path:polygon(0 0,100% 0,0 100%); transition:transform .25s var(--ease); }
+.cs-more:hover { color:var(--sg); gap:12px; }
+.cs-more:hover::after { transform:translate(2px,-2px); }
+
+/* ===== CARBON COMPARISON (coal vs EFB pellet) — full-bleed full-page ===== */
+.emission { background:var(--bk); padding:0; }
+.em-compare { position:relative; width:100%; height:100svh; min-height:520px; overflow:hidden; user-select:none; -webkit-user-select:none; cursor:ew-resize; touch-action:pan-y; }
+.em-compare:focus-visible { outline:3px solid var(--sg); outline-offset:-4px; }
+.ec-before, .ec-after { position:absolute; inset:0; }
+.ec-after { clip-path:inset(0 50% 0 0); will-change:clip-path; }
+.ec-panel { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; padding:clamp(82px,11vh,128px) clamp(28px,5vw,96px) clamp(40px,6vh,72px); }
+.ec-coal { background:radial-gradient(130% 130% at 86% 4%, #332e27 0%, #1b1914 56%, #100f0c 100%); color:var(--bn); align-items:flex-end; text-align:right; }
+.ec-efb  { background:radial-gradient(130% 130% at 14% 4%, #6a5dc0 0%, #51448f 56%, #382e6e 100%); color:var(--bn); align-items:flex-start; text-align:left; }
+.ec-fuel { display:flex; align-items:center; gap:10px; font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(16px,1.5vw,22px); letter-spacing:.01em; }
+.ec-coal .ec-fuel { flex-direction:row-reverse; }
+.ec-dot { width:10px; height:10px; border-radius:50%; flex:none; }
+.ec-coal .ec-dot { background:#e0613a; }
+.ec-efb .ec-dot { background:var(--sg); }
+.ec-num { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(74px,13vw,210px); line-height:.8; letter-spacing:-.04em; font-feature-settings:"liga" 1,"dlig" 1,"clig" 1,"calt" 1; }
+.ec-coal .ec-num { color:var(--bn); }
+.ec-efb .ec-num { color:var(--sg); }
+.ec-unit { font-size:clamp(11px,1.05vw,15px); letter-spacing:.16em; text-transform:uppercase; margin-top:12px; color:rgba(255,253,245,.66); }
+.ec-cap { font-size:clamp(13px,1.15vw,16px); line-height:1.4; margin-top:8px; color:rgba(255,253,245,.86); max-width:22ch; }
+.ec-tags { list-style:none; display:flex; flex-direction:column; gap:7px; font-size:clamp(12px,1vw,14px); letter-spacing:.02em; color:rgba(255,253,245,.7); }
+.ec-coal .ec-tags { align-items:flex-end; }
+/* divider + knob */
+.ec-handle { position:absolute; top:0; bottom:0; left:50%; width:2px; transform:translateX(-50%); background:rgba(255,253,245,.85); z-index:5; pointer-events:none; }
+.ec-knob { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:clamp(46px,4vw,58px); height:clamp(46px,4vw,58px); border-radius:50%; background:var(--bn); color:var(--bk); display:grid; place-items:center; box-shadow:0 6px 20px rgba(0,0,0,.38); pointer-events:auto; cursor:ew-resize; transition:transform .2s var(--ease), box-shadow .2s var(--ease); }
+.em-compare.dragging .ec-knob { transform:translate(-50%,-50%) scale(1.1); box-shadow:0 12px 34px rgba(0,0,0,.5); }
+/* "drag to compare" hint — sits under the knob, fades out on first drag */
+.ec-hint { position:absolute; left:50%; top:calc(50% + clamp(42px,4vw,56px)); transform:translateX(-50%); z-index:6;
+  display:inline-flex; align-items:center; gap:8px; padding:9px 16px; border-radius:999px;
+  background:rgba(20,16,40,.5); border:1px solid rgba(255,253,245,.28); backdrop-filter:blur(6px);
+  color:var(--bn); font-size:13px; font-weight:600; letter-spacing:.02em; white-space:nowrap; pointer-events:none;
+  transition:opacity .4s var(--ease); animation:ecHintPulse 2.4s ease-in-out infinite; }
+.em-compare.dragging .ec-hint, .em-compare.interacted .ec-hint { opacity:0; }
+@keyframes ecHintPulse { 0%,100%{ opacity:.7; } 50%{ opacity:1; } }
+/* tiny honesty disclaimer pinned bottom-centre, spans both panels */
+.ec-note { position:absolute; left:50%; bottom:clamp(16px,2.4vh,30px); transform:translateX(-50%); z-index:6;
+  width:min(680px,82%); text-align:center; font-size:12px; line-height:1.45; color:rgba(255,253,245,.5); pointer-events:none; }
+@media (prefers-reduced-motion:reduce){ .ec-hint { animation:none; } }
+
+@media (max-width:900px) {
+  /* HERO TRANSITION → static stacked layout on small screens (no pin/morph) */
+  .hero-transition { height:auto; }
+  .hero-stage { position:static; height:auto; overflow:visible; display:flex; flex-direction:column; }
+  .ht-logo { position:static; width:100%; height:auto; transform:none; justify-content:flex-start;
+    padding:clamp(74px,17vw,96px) var(--gutter) 10px; }
+  .ht-logo img { max-height:none; width:min(72vw,380px); }
+  .ht-divider { display:none; }
+  .ht-headline { position:static; height:auto; transform:none; padding:6px var(--gutter) clamp(20px,5vw,30px); }
+  .hh-open { display:none; }
+  .hh-compact { opacity:1 !important; font-size:clamp(30px,8vw,46px); }
+  .ht-ticker { position:static; transform:none; top:auto; height:46px; }
+  .ht-image { position:static; top:auto; clip-path:none; height:clamp(320px,82vw,520px); }
+  .ht-image img { transform:none; }
+  .intro-grid { grid-template-columns:1fr; gap:20px; }
+  /* FeatureSection → vertical accordion */
+  .fs-head { justify-content:flex-start; }
+  .fs-title { text-align:left; font-size:clamp(32px,9.5vw,70px); }
+  .feature-row { grid-template-columns:1fr; gap:16px; }
+  .fr-left { order:1; }
+  .feature-visual-tab { order:2; height:clamp(150px,40vw,230px); }
+  .feature-row.active .feature-visual-tab { height:clamp(190px,52vw,300px); }
+  .fd-grid { grid-template-columns:1fr; gap:26px; }
+  .fd-gallery { grid-template-columns:1fr 1fr; }
+  /* small screens: revert full-page → natural stacked height */
+  .capacity { min-height:0; }
+  .capacity > .wrap { justify-content:flex-start; padding-top:calc(var(--nav-h) + clamp(28px,6vw,44px)); padding-bottom:clamp(28px,6vw,44px); }
+  .cap-intro { max-width:none; }
+  /* selector becomes a vertical expanding accordion on small screens */
+  .cap-selector { flex-direction:column; height:auto; flex:none; min-height:0; }
+  .cap-opt { flex:none; width:100%; height:88px; padding:22px 2px; border-left:0; border-top:1px solid var(--hair-bn); transform:translateY(-20px); }
+  .cap-opt:first-child { border-top:0; }
+  .cap-opt.in { transform:translateY(0); }
+  .cap-opt.active { flex-grow:0; height:auto; min-height:clamp(280px,70vw,360px); }
+  /* resting row: circle + label side by side */
+  .cs-rest { flex-direction:row; align-items:center; gap:16px; }
+  .cs-circle { width:46px; height:46px; }
+  /* active view flows in normal height on mobile */
+  .cs-active { position:absolute; }
+  .cs-h { font-size:clamp(38px,10vw,60px); }
+  .ec-panel { padding:clamp(74px,11vh,100px) clamp(20px,5vw,28px) clamp(54px,8vh,72px); }
+  .ec-num { font-size:clamp(50px,15vw,84px); }
+  .ec-cap { max-width:15ch; font-size:13px; }
+  .ec-tags li:nth-child(n+3) { display:none; }   /* keep one tag pair per panel on small screens */
+  .ec-note { width:90%; bottom:10px; font-size:11px; }
+}
+</style>
+
+</body></html>

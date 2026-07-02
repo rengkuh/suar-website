@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Office temp/lock files
+~$*
+*.pptx
+
+# Editor
+.vscode/
+.idea/
+
+# Vercel
+.vercel/

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — SUAR Energi Futura</title>
+<meta name="description" content="Looking for a reliable biomass partner? Tell us about your project.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body data-nav-page="contact.html" class="loading reg-balanced atm-breeze">
+
+<!-- ============ INTRO LOADER ============ -->
+<div id="loader" class="loader">
+  <div class="loader-mark"><img src="logo-bone.png" alt="SUAR"></div>
+  <div class="loader-count"><span>0</span></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <a class="brand" href="index.html"><img class="brand-uv" src="logo-uv.png" alt="SUAR"><img class="brand-dark" src="logo-sg.png" alt=""></a>
+  <div class="links">
+    <a data-page="about.html" href="about.html"><span class="tick">▼</span><span class="lbl">about</span></a>
+    <a data-page="project.html" href="project.html"><span class="tick">▼</span><span class="lbl">project</span></a>
+    <a data-page="services.html" href="services.html"><span class="tick">▼</span><span class="lbl">services</span></a>
+    <a data-page="product.html" href="product.html"><span class="tick">▼</span><span class="lbl">product</span></a>
+    <a data-page="contact.html" href="contact.html"><span class="tick">▼</span><span class="lbl">contact</span></a>
+    <span class="lang">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="id">ID</button>
+    </span>
+  </div>
+</nav>
+
+<header class="contact-hero wrap">
+  <h1 class="contact-title reveal">contact</h1>
+</header>
+
+<section class="section contact-sec">
+  <div class="wrap contact-grid">
+    <p class="contact-lead reveal">
+      <span data-i18n-en="">We're thrilled that you're here! Please tell us more about your project.</span>
+      <span data-i18n-id="">Senang Anda di sini! Ceritakan lebih banyak tentang proyek Anda.</span>
+    </p>
+
+    <form class="contact-form reveal d1" id="contact-form">
+      <div class="cf-row">
+        <label class="cf-field">
+          <span data-i18n-en="">Email *</span><span data-i18n-id="">Email *</span>
+          <input type="email" name="email" required>
+        </label>
+        <label class="cf-field">
+          <span data-i18n-en="">First Name</span><span data-i18n-id="">Nama Depan</span>
+          <input type="text" name="firstname">
+        </label>
+      </div>
+      <label class="cf-field">
+        <span data-i18n-en="">Company name</span><span data-i18n-id="">Nama Perusahaan</span>
+        <input type="text" name="company">
+      </label>
+      <label class="cf-field">
+        <span data-i18n-en="">Message</span><span data-i18n-id="">Pesan</span>
+        <textarea name="message" rows="5"></textarea>
+      </label>
+      <button type="submit" class="cf-submit">
+        <span data-i18n-en="">SUBMIT</span><span data-i18n-id="">KIRIM</span> <span aria-hidden="true">→</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<style>
+.contact-hero { padding-top:calc(var(--nav-h) + clamp(24px,5vw,70px)); padding-bottom:clamp(8px,1.5vw,20px); }
+.contact-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(96px,22vw,340px); line-height:.8; letter-spacing:-.04em; color:var(--bk); }
+.contact-sec { border-top:1px solid var(--hair); padding-top:clamp(32px,4vw,56px); }
+.contact-grid { display:grid; grid-template-columns:0.8fr 1.2fr; gap:clamp(32px,5vw,72px); align-items:start; }
+.contact-lead { font-size:clamp(19px,1.7vw,24px); line-height:1.4; color:var(--ink-soft); max-width:24ch; }
+.contact-form { display:flex; flex-direction:column; gap:clamp(18px,2vw,26px); }
+.cf-row { display:grid; grid-template-columns:1fr 1fr; gap:clamp(18px,2vw,26px); }
+.cf-field { display:flex; flex-direction:column; gap:8px; font-size:13px; font-weight:600; letter-spacing:.02em; color:var(--ink-soft); }
+.cf-field input, .cf-field textarea { font-family:inherit; font-size:16px; color:var(--bk); background:var(--bn); border:1px solid var(--hair); border-radius:8px; padding:13px 14px; transition:border-color .2s; }
+.cf-field input:focus, .cf-field textarea:focus { outline:none; border-color:var(--uv); }
+.cf-field textarea { resize:vertical; }
+.cf-submit { align-self:flex-start; display:inline-flex; align-items:center; gap:12px; margin-top:6px; padding:15px 30px; border:none; border-radius:8px; background:var(--bk); color:var(--bn); font-family:inherit; font-size:13px; font-weight:700; letter-spacing:.12em; cursor:pointer; transition:background .25s, gap .25s; }
+.cf-submit:hover { background:var(--uv); gap:16px; }
+@media (max-width:760px){ .contact-grid{ grid-template-columns:1fr; } .cf-row{ grid-template-columns:1fr; } }
+</style>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var f = e.target;
+  var subj = encodeURIComponent("Project enquiry — " + (f.company.value || f.firstname.value || "SUAR"));
+  var body = encodeURIComponent(
+    "Name: " + f.firstname.value + "\nEmail: " + f.email.value +
+    "\nCompany: " + f.company.value + "\n\n" + f.message.value);
+  window.location.href = "mailto:suarcompany@gmail.com?subject=" + subj + "&body=" + body;
+});
+</script>
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-nav-dark="">
+  <div class="footer-inner">
+    <div class="footer-cta">
+      <h2 class="fc-head">
+        <span data-i18n-en="">Looking for a <span class="fc-rotate" data-words="reliable, traceable, sustainable, consistent, certified">reliable</span><br>biomass partner?<span class="fc-glyph">/-$</span></span>
+        <span data-i18n-id="">Mencari mitra biomassa<br>yang <span class="fc-rotate" data-words="andal, terlacak, lestari, konsisten, tepat">andal</span>?<span class="fc-glyph">/-$</span></span>
+      </h2>
+      <a class="fc-contact" href="contact.html">&ldquo;Contact&rdquo;</a>
+    </div>
+
+    <div class="footer-main">
+      <div class="fm-brand">
+        <img src="logo-bone.png" alt="SUAR">
+        <span class="fm-sub">PT SUAR ENERGI FUTURA</span>
+      </div>
+      <div class="fm-right">
+        <div class="fm-cols">
+          <div class="fm-col">
+            <h4 data-i18n-en="">Company</h4><h4 data-i18n-id="">Perusahaan</h4>
+            <a href="about.html">About</a>
+            <a href="services.html">Service</a>
+            <a href="news.html">News</a>
+            <a href="#">Technology</a>
+          </div>
+          <div class="fm-col">
+            <h4 data-i18n-en="">Application</h4><h4 data-i18n-id="">Aplikasi</h4>
+            <a href="#">Career</a>
+            <a href="#">Factory</a>
+            <a href="#">Work Wear</a>
+          </div>
+          <div class="fm-col">
+            <h4 data-i18n-en="">Contact</h4><h4 data-i18n-id="">Kontak</h4>
+            <a href="mailto:contact@suar.earth">Contact@suar.earth</a>
+            <a href="contact.html">Office</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#" target="_blank" rel="noopener">LINKEDIN</a>
+          <a href="#" target="_blank" rel="noopener">INSTAGRAM</a>
+          <a href="https://suar.earth" target="_blank" rel="noopener">SUAR.EARTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 SUAR Energi Futura</span>
+      <span>Brand Guideline v0.2</span>
+    </div>
+  </div>
+</footer>
+
+<script src="web-home.js"></script>
+<script src="atoll-fx.js"></script>
+</body></html>
