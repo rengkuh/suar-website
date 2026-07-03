@@ -16,6 +16,7 @@
     {
       no: "01", title: "Reliable", category: "Specification you can plan around",
       icon: "icon-reliable.png",
+      video: "videos/reliable.mp4", frame: "images/frame-reliable.png",   // ember motion clip + schematic frame overlay
       summary: "Industrial buyers do not have fuel flexibility. A boiler calibrated for a specific calorific range cannot absorb variation batch to batch. That is why every pellet SUAR produces is held to the same specification: consistent heat output, low chlorine and potassium, sulfur levels that coal cannot match. Not because certification requires it. Because the alternative is a partner who cannot plan around you.",
       points: ["Consistent heat output, batch to batch", "Low chlorine and potassium", "Sulfur levels coal cannot match"],
       image: null,
@@ -30,6 +31,7 @@
     {
       no: "02", title: "Traceable", category: "Documented from waste to sack",
       icon: "icon-traceable.png",
+      video: "videos/traceable.mp4", frame: "images/frame-trace.png",   // motion clip + certification frame overlay
       summary: "The feedstock starts as waste. Empty fruit bunches pulled from palm oil mills, material that would otherwise decompose in open piles or burn in open fields. From that point forward, every stage is recorded. The batch, the source, the shipment. By the time a sack reaches a buyer, its entire journey is already documented. Knowing what you burn matters as much as how well it burns.",
       points: ["Sourced from palm oil mill residue", "Batch, source and shipment recorded", "Fully documented before delivery"],
       image: null,
@@ -44,6 +46,7 @@
     {
       no: "03", title: "Sustainable", category: "Built from what agriculture leaves behind",
       icon: "icon-sustainable.png",
+      video: "videos/sustainable.mp4", frame: "images/frame-sustainable.png",   // living moss motion clip + "no waste" frame overlay
       summary: "Indonesia produces more empty fruit bunch residue than almost any country on earth. Most of it releases methane as it rots, or carbon as it burns with no return. SUAR does not begin with extraction. It begins with what agriculture already leaves behind. The pellet at the end of that process is not a compromise on energy output. It is certified solid fuel that replaces coal, built from material that had no better destination.",
       points: ["Starts with residue, not extraction", "Diverts methane and open-field burning", "Certified solid fuel that replaces coal"],
       image: null,
@@ -74,10 +77,19 @@
     return ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" })[c]; }); }
 
   /* ---------- build FeatureRows ---------- */
+  function frameOverlay(f) {
+    /* per-feature SUAR technical frame (PNG: lines → bone, bg transparent) */
+    return '<img class="fvt-frameimg" src="' + esc(f.frame) + '" alt="" aria-hidden="true">';
+  }
   function visualInner(f) {
-    var img = f.image ? '<img class="fvt-img" src="' + esc(f.image) + '" alt="">' : "";
-    return img +
-      '<span class="fvt-no">' + esc(f.no) + '</span>' +
+    var media = "";
+    if (f.video) {
+      media = '<video class="fvt-video" src="' + esc(f.video) + '" autoplay muted loop playsinline preload="metadata"></video>';
+    } else if (f.image) {
+      media = '<img class="fvt-img" src="' + esc(f.image) + '" alt="">';
+    }
+    return media + (f.frame ? frameOverlay(f) : "") +
+      (f.video ? "" : '<span class="fvt-no">' + esc(f.no) + '</span>') +
       '<span class="fvt-cue">View detail →</span>';
   }
   function rowMarkup(f, i) {

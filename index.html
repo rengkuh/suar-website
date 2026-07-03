@@ -155,6 +155,7 @@
       <!-- BEFORE · coal (base layer, content hugs the right) -->
       <div class="ec-before">
         <div class="ec-panel ec-coal">
+          <video class="ec-video" src="videos/coal.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
           <div class="ec-fuel"><span class="ec-dot"></span><span data-i18n-en="">Coal</span><span data-i18n-id="">Batu Bara</span></div>
           <div class="ec-metric">
             <div class="ec-num cat">95</div>
@@ -172,6 +173,7 @@
       <!-- AFTER · EFB pellet (clipped to the left, content hugs the left) -->
       <div class="ec-after">
         <div class="ec-panel ec-efb">
+          <video class="ec-video" src="videos/efb.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
           <div class="ec-fuel"><span class="ec-dot"></span><span data-i18n-en="">EFB Pellet</span><span data-i18n-id="">Pelet TKKS</span></div>
           <div class="ec-metric">
             <div class="ec-num cat">&asymp;0</div>
@@ -391,6 +393,10 @@ body.atm-flowing { --marq-dur:15s; --band-dur:14s; --bandtext-dur:13s; --reveal-
 .feature-row.active .feature-visual-tab { height:clamp(230px,32vw,420px); }
 .feature-row.active .feature-visual-tab .fvt-cue { opacity:1; transform:none; }
 .feature-row:not(.active) .feature-visual-tab { filter:saturate(.82) brightness(.99); }
+/* motion video fill + SUAR certification frame overlay (Traceable) */
+.feature-visual-tab .fvt-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; background:#0e0c14; }
+.feature-visual-tab.has-video { background:#0e0c14; }
+.fvt-frameimg { position:absolute; inset:0; width:100%; height:100%; object-fit:fill; z-index:2; pointer-events:none; }
 .feature-row:not(.active):hover .feature-title { transform:translateX(6px); }
 
 /* ----- FeatureDetailPanel (fixed overlay) ----- */
@@ -468,7 +474,14 @@ html.detail-open, html.detail-open body { overflow:hidden; }
 .ec-before, .ec-after { position:absolute; inset:0; }
 .ec-after { clip-path:inset(0 50% 0 0); will-change:clip-path; }
 .ec-panel { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; padding:clamp(82px,11vh,128px) clamp(28px,5vw,96px) clamp(40px,6vh,72px); }
-.ec-coal { background:radial-gradient(130% 130% at 86% 4%, #332e27 0%, #1b1914 56%, #100f0c 100%); color:var(--bn); align-items:flex-end; text-align:right; }
+.ec-coal { background:radial-gradient(130% 130% at 86% 4%, #332e27 0%, #1b1914 56%, #100f0c 100%); color:var(--bn); align-items:flex-end; text-align:right; overflow:hidden; }
+/* isolated motion behind each panel's content (coal + EFB) */
+.ec-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; pointer-events:none; }
+.ec-coal::after { content:""; position:absolute; inset:0; z-index:0; background:linear-gradient(to left, rgba(16,15,12,.62) 0%, rgba(16,15,12,.12) 55%, rgba(16,15,12,.4) 100%); }
+.ec-efb { overflow:hidden; }
+.ec-efb::after { content:""; position:absolute; inset:0; z-index:0; background:linear-gradient(to right, rgba(44,35,92,.6) 0%, rgba(44,35,92,.1) 55%, rgba(44,35,92,.4) 100%); }
+.ec-coal > .ec-fuel, .ec-coal > .ec-metric, .ec-coal > .ec-tags,
+.ec-efb > .ec-fuel, .ec-efb > .ec-metric, .ec-efb > .ec-tags { position:relative; z-index:1; }
 .ec-efb  { background:radial-gradient(130% 130% at 14% 4%, #6a5dc0 0%, #51448f 56%, #382e6e 100%); color:var(--bn); align-items:flex-start; text-align:left; }
 .ec-fuel { display:flex; align-items:center; gap:10px; font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(16px,1.5vw,22px); letter-spacing:.01em; }
 .ec-coal .ec-fuel { flex-direction:row-reverse; }
