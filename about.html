@@ -97,8 +97,11 @@
 </div>
 
 <!-- ============ MISSION PHOTO ============ -->
-<div class="about-photo" data-nav-dark="">
-  <img src="pellet.jpg" alt="SUAR biomass pellets made from empty fruit bunch">
+<div class="about-photo" data-nav-dark="" role="img" aria-label="Piles of SUAR EFB biomass pellets, top view">
+  <div class="ac-track" aria-hidden="true">
+    <img src="images/pellet-carousel.jpg" alt="">
+    <img src="images/pellet-carousel.jpg" alt="">
+  </div>
   <span class="ph-tag">Biomass Pellet · EFB</span>
 </div>
 
@@ -396,10 +399,14 @@ body.lang-id .vts-sub[data-i18n-en] { display:none; }
 body.lang-id .vts-sub[data-i18n-id] { display:block; }
 .vts-body { font-size:clamp(14px,1.15vw,18px); line-height:1.55; color:var(--ink-soft); max-width:44ch; }
 
-.about-photo { height:clamp(300px,42vw,520px); margin-top:8px; position:relative; overflow:hidden; background:#d8d2c2; }
-.about-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
-.about-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.35)); z-index:1; }
+/* top-view pellet-pile carousel: objects drift left→right, static frame, seamless loop */
+.about-photo { height:clamp(300px,42vw,520px); margin-top:8px; position:relative; overflow:hidden; background:#000; }
+.about-photo .ac-track { display:flex; width:max-content; height:100%; animation:ac-drift 55s linear infinite; will-change:transform; }
+.about-photo .ac-track img { height:100%; width:auto; display:block; }
+@keyframes ac-drift { from { transform:translateX(-50%); } to { transform:translateX(0); } }
+.about-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.45)); z-index:1; pointer-events:none; }
 .about-photo .ph-tag { z-index:2; }
+@media (prefers-reduced-motion:reduce){ .about-photo .ac-track{ animation:none; } }
 
 .bigword-row { display:flex; align-items:flex-start; justify-content:space-between; margin-top:clamp(28px,4vw,64px); }
 
