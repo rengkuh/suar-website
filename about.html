@@ -97,10 +97,11 @@
 </div>
 
 <!-- ============ MISSION PHOTO ============ -->
-<div class="about-photo" data-nav-dark="" role="img" aria-label="Piles of SUAR EFB biomass pellets, top view">
+<div class="about-photo" data-nav-dark="" role="img" aria-label="SUAR EFB biomass pellets moving along a conveyor belt, top view">
+  <div class="belt" aria-hidden="true"></div>
   <div class="ac-track" aria-hidden="true">
-    <img src="images/pellet-carousel.jpg" alt="">
-    <img src="images/pellet-carousel.jpg" alt="">
+    <img src="images/pellet-carousel-cut.png" alt="">
+    <img src="images/pellet-carousel-cut.png" alt="">
   </div>
   <span class="ph-tag">Biomass Pellet · EFB</span>
 </div>
@@ -400,13 +401,29 @@ body.lang-id .vts-sub[data-i18n-id] { display:block; }
 .vts-body { font-size:clamp(14px,1.15vw,18px); line-height:1.55; color:var(--ink-soft); max-width:44ch; }
 
 /* top-view pellet-pile carousel: objects drift left→right, static frame, seamless loop */
-.about-photo { height:clamp(300px,42vw,520px); margin-top:8px; position:relative; overflow:hidden; background:#000; }
-.about-photo .ac-track { display:flex; width:max-content; height:100%; animation:ac-drift 55s linear infinite; will-change:transform; }
+.about-photo { height:clamp(300px,42vw,520px); margin-top:8px; position:relative; overflow:hidden; background:#0b0d10; }
+/* moving conveyor belt: transverse cleats scroll right, soft top light */
+.about-photo .belt { position:absolute; inset:0; z-index:0;
+  background:
+    radial-gradient(130% 90% at 50% -10%, rgba(150,160,170,.16), rgba(0,0,0,0) 62%),
+    repeating-linear-gradient(90deg,
+      #090b0d 0px, #0c0f12 5px,
+      #14181d 15px, #1d2228 24px,
+      #14181d 33px, #0c0f12 43px, #090b0d 48px);
+  background-size:100% 100%, 48px 100%;
+  background-repeat:no-repeat, repeat-x;
+  animation:belt-run 2.4s linear infinite; will-change:background-position; }
+@keyframes belt-run { from { background-position:center top, 0 0; } to { background-position:center top, 48px 0; } }
+/* belt side rails top & bottom */
+.about-photo .belt::before,.about-photo .belt::after { content:""; position:absolute; left:0; right:0; height:8%; pointer-events:none; }
+.about-photo .belt::before { top:0; background:linear-gradient(180deg,#2b3037,#090b0d); }
+.about-photo .belt::after { bottom:0; background:linear-gradient(0deg,#2b3037,#090b0d); }
+.about-photo .ac-track { position:relative; z-index:1; display:flex; width:max-content; height:100%; animation:ac-drift 55s linear infinite; will-change:transform; filter:drop-shadow(0 8px 11px rgba(0,0,0,.6)); }
 .about-photo .ac-track img { height:100%; width:auto; display:block; }
 @keyframes ac-drift { from { transform:translateX(-50%); } to { transform:translateX(0); } }
-.about-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.45)); z-index:1; pointer-events:none; }
-.about-photo .ph-tag { z-index:2; }
-@media (prefers-reduced-motion:reduce){ .about-photo .ac-track{ animation:none; } }
+.about-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.12),rgba(0,0,0,.4)); z-index:2; pointer-events:none; }
+.about-photo .ph-tag { z-index:3; }
+@media (prefers-reduced-motion:reduce){ .about-photo .ac-track,.about-photo .belt{ animation:none; } }
 
 .bigword-row { display:flex; align-items:flex-start; justify-content:space-between; margin-top:clamp(28px,4vw,64px); }
 
