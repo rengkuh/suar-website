@@ -14,7 +14,21 @@
     var el = document.getElementById("loader");
     if (!el || reduce) { if (el) el.classList.add("done"); document.body.classList.remove("loading"); done(); return; }
     var numEl = el.querySelector(".loader-count span");
-    var start = null, dur = 1150, finished = false;
+
+    // Show the branded intro only once per session. On subsequent in-session
+    // navigations, skip the count and reveal fast so internal clicks feel instant.
+    var seen = false;
+    try { seen = sessionStorage.getItem("suarIntro") === "1"; sessionStorage.setItem("suarIntro", "1"); } catch (e) {}
+    if (seen) {
+      el.style.transition = "transform .4s cubic-bezier(.76,0,.24,1)";
+      if (numEl) numEl.textContent = 100;
+      document.body.classList.remove("loading");
+      requestAnimationFrame(function () { el.classList.add("done"); });
+      setTimeout(done, 120);
+      return;
+    }
+
+    var start = null, dur = 760, finished = false;
     function finish() {
       if (finished) return; finished = true;
       if (numEl) numEl.textContent = 100;
@@ -33,7 +47,7 @@
     requestAnimationFrame(step);
     // safety net: rAF is throttled while the tab is backgrounded — never leave
     // the loader (and body overflow:hidden) stuck if the page loaded hidden.
-    setTimeout(finish, dur + 1200);
+    setTimeout(finish, dur + 1000);
   }
 
   /* ---------- 2 · LINE-MASK REVEAL (hero + headings) ---------- */
