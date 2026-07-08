@@ -16,31 +16,31 @@
       key: "plant", icon: "capico-plant.png", more: "project.html",
       titleEn: "Pilot Plant",        titleId: "Pabrik Pilot",
       subEn:   "5 TPH pilot facility, on process — proving the line before it scales.",
-      subId:   "Fasilitas pilot 5 TPH, sedang berjalan — membuktikan lini sebelum ditingkatkan."
+      subId:   "Fasilitas pilot 5 TPH yang sudah berjalan — membuktikan lininya sebelum ditingkatkan."
     },
     {
       key: "line", icon: "capico-line.png", more: "project.html",
       titleEn: "Production Line",     titleId: "Lini Produksi",
       subEn:   "10 TPH of designed throughput across an integrated line.",
-      subId:   "10 TPH throughput terancang pada satu lini terintegrasi."
+      subId:   "10 TPH terancang pada satu lini yang menyatu."
     },
     {
       key: "mills", icon: "capico-mills.png", more: "project.html",
       titleEn: "Pellet Mills",        titleId: "Mesin Pelet",
       subEn:   "Four parallel pellet mills holding output to one spec.",
-      subId:   "Empat mesin pelet paralel menjaga keluaran pada satu spesifikasi."
+      subId:   "Empat mesin pelet berjajar, menjaga keluaran tetap pada satu spesifikasi."
     },
     {
       key: "sections", icon: "capico-sections.png", more: "project.html",
       titleEn: "Process Sections",    titleId: "Seksi Proses",
       subEn:   "Five integrated sections, from feedstock intake to finishing.",
-      subId:   "Lima seksi terintegrasi, dari penerimaan bahan baku hingga penyelesaian."
+      subId:   "Lima seksi yang menyatu, dari bahan baku diterima hingga pelet dirampungkan."
     },
     {
       key: "pellets", icon: "capico-pellets.png", more: "product.html",
       titleEn: "Finished Pellets",    titleId: "Pelet Jadi",
       subEn:   "Certified solid biomass fuel, ready for industrial offtake.",
-      subId:   "Bahan bakar biomassa padat bersertifikat, siap untuk serapan industri."
+      subId:   "Bahan bakar biomassa padat bersertifikat, siap diserap industri."
     }
   ];
 

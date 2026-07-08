@@ -12,19 +12,19 @@
       key: "jambi", num: "01", more: "contact.html",
       titleEn: "Jambi",              titleId: "Jambi",
       subEn:   "Planned biomass pellet facility in Jambi, sited inside Sumatra's palm belt — feedstock at the doorstep.",
-      subId:   "Rencana fasilitas pelet biomassa di Jambi, di dalam sabuk sawit Sumatra — bahan baku di depan pintu."
+      subId:   "Rencana pabrik pelet biomassa di Jambi, di jantung sabuk sawit Sumatra — bahan baku menunggu di depan pintu."
     },
     {
       key: "kalteng", num: "02", more: "contact.html",
       titleEn: "Central Kalimantan", titleId: "Kalimantan Tengah",
       subEn:   "Our Lamandau pilot plant — a 5 TPH facility proving the production line before it scales to full capacity.",
-      subId:   "Pabrik pilot Lamandau — fasilitas 5 TPH yang membuktikan lini produksi sebelum ditingkatkan ke kapasitas penuh."
+      subId:   "Pabrik pilot Lamandau — fasilitas 5 TPH yang membuktikan lininya dulu, sebelum tumbuh ke kapasitas penuh."
     },
     {
       key: "palembang", num: "03", more: "contact.html",
       titleEn: "Palembang",          titleId: "Palembang",
       subEn:   "Planned facility in South Sumatra, positioned close to concentrated feedstock and export logistics.",
-      subId:   "Rencana fasilitas di Sumatra Selatan, dekat bahan baku terkonsentrasi dan logistik ekspor."
+      subId:   "Rencana pabrik di Sumatra Selatan, dekat dengan bahan baku yang berlimpah dan jalur ekspor."
     }
   ];
 
