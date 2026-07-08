@@ -56,12 +56,12 @@
 <!-- ============ COMPARISON · spec grid + two tracks ============ -->
 <section class="cmp uv-bg" id="tracks" data-nav-dark="">
   <div class="cmp-specs">
-    <div class="cmp-cell"><span data-i18n-en="">Kcal</span><span data-i18n-id="">Kkal</span></div>
-    <div class="cmp-cell"><span data-i18n-en="">Chlorine</span><span data-i18n-id="">Klorin</span></div>
+    <div class="cmp-cell"><span class="cv">&asymp;4,300</span><span class="cl">kcal/kg</span></div>
+    <div class="cmp-cell"><span class="cv">0.09%</span><span class="cl"><span data-i18n-en="">Chlorine</span><span data-i18n-id="">Klorin</span></span></div>
     <div class="cmp-cell">10 TPH</div>
     <div class="cmp-cell">5 TPH</div>
-    <div class="cmp-cell"><span data-i18n-en="">Potassium</span><span data-i18n-id="">Kalium</span></div>
-    <div class="cmp-cell"><span data-i18n-en="">Sulfur</span><span data-i18n-id="">Belerang</span></div>
+    <div class="cmp-cell"><span class="cv">0.2%</span><span class="cl"><span data-i18n-en="">Potassium</span><span data-i18n-id="">Kalium</span></span></div>
+    <div class="cmp-cell"><span class="cv">0.8%</span><span class="cl"><span data-i18n-en="">Sulfur</span><span data-i18n-id="">Belerang</span></span></div>
     <div class="cmp-cell"><span data-i18n-en="">Modular</span><span data-i18n-id="">Modular</span></div>
     <div class="cmp-cell"><span data-i18n-en="">Centralized</span><span data-i18n-id="">Tersentral</span></div>
   </div>
@@ -273,7 +273,8 @@ body.lang-id .page-hero .eyebrow[data-i18n-id] { display:block; }
 /* ===== COMPARISON · spec grid + two tracks (from layout sketch) ===== */
 .cmp { background:var(--uv); color:var(--bn); }
 .cmp-specs { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--hair-bn); }
-.cmp-cell { display:flex; align-items:center; justify-content:center; text-align:center; min-height:clamp(88px,12vh,140px); padding:clamp(14px,2vw,26px); border-left:1px solid var(--hair-bn); border-bottom:1px solid var(--hair-bn); font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(19px,2.3vw,34px); letter-spacing:-.02em; color:var(--bn); }
+.cmp-cell { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; text-align:center; min-height:clamp(88px,12vh,140px); padding:clamp(14px,2vw,26px); border-left:1px solid var(--hair-bn); border-bottom:1px solid var(--hair-bn); font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(19px,2.3vw,34px); letter-spacing:-.02em; color:var(--bn); }
+.cmp-cell .cl { font-size:.4em; font-weight:600; letter-spacing:.08em; text-transform:uppercase; opacity:.72; }
 .cmp-cell:nth-child(4n+1) { border-left:0; }
 .cmp-tracks { display:grid; grid-template-columns:1fr 1fr; }
 .cmp-track { display:flex; flex-direction:column; min-height:clamp(340px,46vh,560px); padding:clamp(38px,5vw,96px) clamp(26px,4vw,80px) clamp(40px,5vw,80px); }
