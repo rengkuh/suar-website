@@ -97,7 +97,7 @@
     <h2 class="ft-title" data-i18n-en="">four things we do</h2><h2 class="ft-title" data-i18n-id="">empat hal yang kami kerjakan</h2>
   </header>
 
-  <div class="ft-stack wrap">
+  <div class="ft-stack">
 
     <article class="ft-card" style="--i:0">
       <div class="ftc-text">
@@ -257,11 +257,11 @@
 .ft-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(40px,7vw,120px); line-height:.92; letter-spacing:-.04em; text-transform:lowercase; color:var(--bn); margin-top:clamp(10px,1.2vw,18px); }
 .ft-title[data-i18n-id] { display:none; } body.lang-id .ft-title[data-i18n-en] { display:none; } body.lang-id .ft-title[data-i18n-id] { display:block; }
 
-.ft-stack { display:flex; flex-direction:column; gap:clamp(28px,4vh,60px); }
+.ft-stack { display:flex; flex-direction:column; gap:clamp(28px,4vh,60px); width:100%; }
 .ft-card { position:sticky; top:calc(var(--ft-top) + var(--i) * 20px); z-index:calc(var(--i) + 1);
   display:grid; grid-template-columns:1.05fr 1fr; min-height:clamp(440px,76vh,760px);
   background:var(--uv); border:0; border-top:1px solid var(--bn); }
-.ftc-text { display:flex; flex-direction:column; justify-content:center; padding:clamp(28px,3.2vw,64px); }
+.ftc-text { display:flex; flex-direction:column; justify-content:center; padding:clamp(28px,3.2vw,64px); padding-left:var(--gutter); }
 .ftc-top { display:flex; align-items:center; gap:14px; margin-bottom:clamp(20px,2.4vw,36px); }
 .ftc-no { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(30px,3.4vw,56px); letter-spacing:-.02em; color:var(--bn); line-height:1; }
 .ftc-top .tri { width:14px; height:14px; background:var(--sg); clip-path:polygon(0 0,100% 0,0 100%); }
