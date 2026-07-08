@@ -91,7 +91,7 @@
 
 <!-- ============ SERVICES LIST ============ -->
 <!-- ============ FOUR THINGS WE DO · sticky-stacking cards ============ -->
-<section class="ft-section" id="four-things">
+<section class="ft-section" id="four-things" data-nav-dark="">
   <header class="ft-head wrap">
     <span class="ft-eyebrow"><span class="tri" aria-hidden="true"></span><span data-i18n-en="">Services</span><span data-i18n-id="">Layanan</span></span>
     <h2 class="ft-title" data-i18n-en="">four things we do</h2><h2 class="ft-title" data-i18n-id="">empat hal yang kami kerjakan</h2>
@@ -292,28 +292,28 @@
 @media (prefers-reduced-motion:reduce){ .shs-arrow{ animation:none; } }
 
 /* ===== FOUR THINGS WE DO · sticky-stacking cards ===== */
-.ft-section { --ft-top: calc(var(--nav-h) + 26px); background:var(--bn); padding:0 0 clamp(80px,12vh,160px); }
+.ft-section { --ft-top: calc(var(--nav-h) + 26px); background:var(--uv); padding:0 0 clamp(80px,12vh,160px); }
 .ft-head { padding-top:clamp(20px,2.4vw,34px); margin-bottom:clamp(28px,4vw,56px); }
-.ft-eyebrow { display:inline-flex; align-items:center; gap:10px; font-family:"Catalogue",sans-serif; font-weight:600; font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--uv); }
+.ft-eyebrow { display:inline-flex; align-items:center; gap:10px; font-family:"Catalogue",sans-serif; font-weight:600; font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--bn); }
 .ft-eyebrow .tri { width:10px; height:10px; background:var(--sg); clip-path:polygon(0 0,100% 0,0 100%); flex:none; }
 .ft-eyebrow [data-i18n-id] { display:none; } body.lang-id .ft-eyebrow [data-i18n-en] { display:none; } body.lang-id .ft-eyebrow [data-i18n-id] { display:inline; }
-.ft-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(40px,7vw,120px); line-height:.92; letter-spacing:-.04em; text-transform:lowercase; color:var(--uv); margin-top:clamp(10px,1.2vw,18px); }
+.ft-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(40px,7vw,120px); line-height:.92; letter-spacing:-.04em; text-transform:lowercase; color:var(--bn); margin-top:clamp(10px,1.2vw,18px); }
 .ft-title[data-i18n-id] { display:none; } body.lang-id .ft-title[data-i18n-en] { display:none; } body.lang-id .ft-title[data-i18n-id] { display:block; }
 
 .ft-stack { display:flex; flex-direction:column; gap:clamp(28px,4vh,60px); }
 .ft-card { position:sticky; top:calc(var(--ft-top) + var(--i) * 20px); z-index:calc(var(--i) + 1);
   display:grid; grid-template-columns:1.05fr 1fr; min-height:clamp(440px,76vh,760px);
-  background:var(--bn); border:1px solid var(--uv); }
+  background:var(--uv); border:1px solid var(--bn); }
 .ftc-text { display:flex; flex-direction:column; justify-content:center; padding:clamp(28px,3.2vw,64px); }
 .ftc-top { display:flex; align-items:center; gap:14px; margin-bottom:clamp(20px,2.4vw,36px); }
-.ftc-no { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(30px,3.4vw,56px); letter-spacing:-.02em; color:var(--uv); line-height:1; }
+.ftc-no { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(30px,3.4vw,56px); letter-spacing:-.02em; color:var(--bn); line-height:1; }
 .ftc-top .tri { width:14px; height:14px; background:var(--sg); clip-path:polygon(0 0,100% 0,0 100%); }
-.ftc-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(28px,3.4vw,54px); line-height:1; letter-spacing:-.03em; color:var(--uv); }
+.ftc-title { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(28px,3.4vw,54px); line-height:1; letter-spacing:-.03em; color:var(--bn); }
 .ftc-title[data-i18n-id] { display:none; } body.lang-id .ftc-title[data-i18n-en] { display:none; } body.lang-id .ftc-title[data-i18n-id] { display:block; }
-.ftc-desc { font-size:clamp(15px,1.15vw,18px); line-height:1.65; color:var(--ink-soft); max-width:52ch; margin-top:clamp(16px,2vw,26px); }
+.ftc-desc { font-size:clamp(15px,1.15vw,18px); line-height:1.65; color:rgba(255,253,245,.82); max-width:52ch; margin-top:clamp(16px,2vw,26px); }
 .ftc-desc[data-i18n-id] { display:none; } body.lang-id .ftc-desc[data-i18n-en] { display:none; } body.lang-id .ftc-desc[data-i18n-id] { display:block; }
-.ftc-media { position:relative; overflow:hidden; border-left:1px solid var(--uv); background:var(--uv); display:grid; place-items:center; }
-.ftc-ph { font-family:"Louize Display",serif; font-size:clamp(64px,9vw,150px); color:rgba(255,253,245,.18); line-height:1; }
+.ftc-media { position:relative; overflow:hidden; border-left:1px solid var(--bn); background:var(--bn); display:grid; place-items:center; }
+.ftc-ph { font-family:"Louize Display",serif; font-size:clamp(64px,9vw,150px); color:rgba(95,82,170,.22); line-height:1; }
 .ftc-media img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
 
 .cap-head { display:flex; align-items:flex-start; justify-content:space-between; gap:24px; margin-bottom:48px; }
@@ -338,7 +338,7 @@
   .shs-forklift { top:auto; bottom:clamp(90px,16vh,150px); width:min(560px,150vw); }
   /* four things: drop sticky → normal stacked cards, image below text */
   .ft-card { position:static; grid-template-columns:1fr; min-height:0; }
-  .ftc-media { border-left:0; border-top:1px solid var(--uv); aspect-ratio:16/10; }
+  .ftc-media { border-left:0; border-top:1px solid var(--bn); aspect-ratio:16/10; }
   .proc { grid-template-columns:1fr 1fr; gap:20px 16px; border-top:none; }
   .proc-arrow { display:none; }
   .cta-grid { grid-template-columns:1fr; gap:24px; align-items:start; }
