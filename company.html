@@ -95,24 +95,7 @@
   </div>
 </div>
 
-<!-- ============ MISSION PHOTO ============ -->
-<div class="about-photo" role="img" aria-label="SUAR EFB biomass pellets in a cleated conveyor belt, moving right">
-  <div class="ac-track" aria-hidden="true">
-    <img src="images/pellet-belt.jpg" alt="">
-    <img src="images/pellet-belt.jpg" alt="">
-    <img src="images/pellet-belt.jpg" alt="">
-    <img src="images/pellet-belt.jpg" alt="">
-  </div>
-  <span class="ph-tag">Biomass Pellet · EFB</span>
-</div>
 
-<!-- ============ MARQUEE (below belt) ============ -->
-<div class="marquee">
-  <div class="marquee-track" style="animation-direction:reverse">
-    <span>Circular by design</span><span>Lower emission</span><span>Renewable feedstock</span><span>Empty fruit bunch</span><span>From Kalimantan</span>
-    <span>Circular by design</span><span>Lower emission</span><span>Renewable feedstock</span><span>Empty fruit bunch</span><span>From Kalimantan</span>
-  </div>
-</div>
 
 <!-- ============ STORY (UV) ============ -->
 <!-- ============ OUR STORY · scroll-driven editorial chapters ============ -->
@@ -408,13 +391,6 @@ body.lang-id .vts-sub[data-i18n-en] { display:none; }
 body.lang-id .vts-sub[data-i18n-id] { display:block; }
 .vts-body { font-size:clamp(14px,1.15vw,18px); line-height:1.55; color:var(--ink-soft); max-width:44ch; }
 
-/* pellet conveyor belt (design image) drifts right, seamless loop */
-.about-photo { height:clamp(240px,28vw,340px); margin:0; position:relative; overflow:hidden; background:#022017; }
-.about-photo .ac-track { display:flex; width:max-content; height:100%; animation:ac-drift 45s linear infinite; will-change:transform; }
-.about-photo .ac-track img { height:100%; width:auto; max-width:none; display:block; }
-@keyframes ac-drift { from { transform:translateX(-25%); } to { transform:translateX(0); } }
-.about-photo .ph-tag { z-index:2; }
-@media (prefers-reduced-motion:reduce){ .about-photo .ac-track{ animation:none; } }
 
 .bigword-row { display:flex; align-items:flex-start; justify-content:space-between; margin-top:clamp(28px,4vw,64px); }
 

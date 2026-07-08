@@ -70,6 +70,25 @@
   </div>
 </div>
 
+<!-- ============ CONVEYOR (belt band, moved from company) ============ -->
+<div class="about-photo" role="img" aria-label="SUAR EFB biomass pellets in a cleated conveyor belt, moving right">
+  <div class="ac-track" aria-hidden="true">
+    <img src="images/pellet-belt.jpg" alt="">
+    <img src="images/pellet-belt.jpg" alt="">
+    <img src="images/pellet-belt.jpg" alt="">
+    <img src="images/pellet-belt.jpg" alt="">
+  </div>
+  <span class="ph-tag">Biomass Pellet · EFB</span>
+</div>
+
+<!-- ============ MARQUEE (below belt) ============ -->
+<div class="marquee">
+  <div class="marquee-track" style="animation-direction:reverse">
+    <span>Pellet production</span><span>Plant development</span><span>O&amp;M</span><span>Feedstock supply</span><span>Offtake partnership</span>
+    <span>Pellet production</span><span>Plant development</span><span>O&amp;M</span><span>Feedstock supply</span><span>Offtake partnership</span>
+  </div>
+</div>
+
 <!-- ============ SERVICES LIST ============ -->
 <!-- ============ FOUR THINGS WE DO · sticky-stacking cards ============ -->
 <section class="ft-section" id="four-things">
@@ -324,6 +343,14 @@
   .proc-arrow { display:none; }
   .cta-grid { grid-template-columns:1fr; gap:24px; align-items:start; }
 }
+
+/* conveyor belt band (moved from company) */
+.about-photo { height:clamp(240px,28vw,340px); margin:0; position:relative; overflow:hidden; background:#022017; }
+.about-photo .ac-track { display:flex; width:max-content; height:100%; animation:ac-drift 45s linear infinite; will-change:transform; }
+.about-photo .ac-track img { height:100%; width:auto; max-width:none; display:block; }
+@keyframes ac-drift { from { transform:translateX(-25%); } to { transform:translateX(0); } }
+.about-photo .ph-tag { z-index:2; }
+@media (prefers-reduced-motion:reduce){ .about-photo .ac-track{ animation:none; } }
 </style>
 
 </body></html>
