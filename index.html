@@ -147,40 +147,65 @@
   </div>
 </section>
 
-<!-- ============ COMPARISON · spec grid + two tracks ============ -->
-<section class="cmp uv-bg" id="comparison" data-nav-dark="">
-  <div class="cmp-specs">
-    <div class="cmp-cell"><span data-i18n-en="">Kcal</span><span data-i18n-id="">Kkal</span></div>
-    <div class="cmp-cell"><span data-i18n-en="">Chlorine</span><span data-i18n-id="">Klorin</span></div>
-    <div class="cmp-cell">10 TPH</div>
-    <div class="cmp-cell">5 TPH</div>
-    <div class="cmp-cell"><span data-i18n-en="">Potassium</span><span data-i18n-id="">Kalium</span></div>
-    <div class="cmp-cell"><span data-i18n-en="">Sulfur</span><span data-i18n-id="">Belerang</span></div>
-    <div class="cmp-cell"><span data-i18n-en="">Modular</span><span data-i18n-id="">Modular</span></div>
-    <div class="cmp-cell"><span data-i18n-en="">Centralized</span><span data-i18n-id="">Tersentral</span></div>
-  </div>
+<!-- ============ CARBON COMPARISON · coal vs EFB pellet ============ -->
+<section class="emission" id="emission" data-nav-dark="">
+    <div class="em-compare" id="em-compare" role="slider" tabindex="0"
+         aria-label="Coal versus EFB pellet carbon emissions" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+      <!-- BEFORE · coal (base layer, content hugs the right) -->
+      <div class="ec-before">
+        <div class="ec-panel ec-coal">
+          <video class="ec-video" src="videos/coal.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+          <div class="ec-fuel"><span class="ec-dot"></span><span data-i18n-en="">Coal</span><span data-i18n-id="">Batu Bara</span></div>
+          <div class="ec-metric">
+            <div class="ec-num cat">95</div>
+            <div class="ec-unit mono">kg CO&#8322; / GJ</div>
+            <div class="ec-cap"><span data-i18n-en="">Fossil carbon, released for good</span><span data-i18n-id="">Karbon fosil, terlepas permanen</span></div>
+          </div>
+          <ul class="ec-tags">
+            <li data-i18n-en="">Sulfur + heavy metals</li><li data-i18n-id="">Belerang + logam berat</li>
+            <li data-i18n-en="">Finite reserve</li><li data-i18n-id="">Cadangan terbatas</li>
+            <li data-i18n-en="">Extracted</li><li data-i18n-id="">Ditambang</li>
+          </ul>
+        </div>
+      </div>
 
-  <div class="cmp-tracks">
-    <article class="cmp-track">
-      <h2 class="cmp-h"><span data-i18n-en="">Buy Pellet</span><span data-i18n-id="">Beli Pelet</span></h2>
-      <span class="cmp-sub"><span data-i18n-en="">For buyers &amp; off-takers</span><span data-i18n-id="">Untuk pembeli &amp; off-taker</span></span>
-      <p class="cmp-body">
-        <span data-i18n-en="">A renewable, lower-emission alternative to coal &mdash; supplied under a long-term offtake agreement with consistent quality, stable pricing, and reliable delivery.</span>
-        <span data-i18n-id="">Alternatif terbarukan rendah emisi untuk batu bara &mdash; dipasok melalui perjanjian offtake jangka panjang dengan kualitas konsisten, harga stabil, dan pengiriman andal.</span>
-      </p>
-      <a class="cmp-btn" href="partnership.html"><span data-i18n-en="">Request offtake &rarr;</span><span data-i18n-id="">Ajukan offtake &rarr;</span></a>
-    </article>
+      <!-- AFTER · EFB pellet (clipped to the left, content hugs the left) -->
+      <div class="ec-after">
+        <div class="ec-panel ec-efb">
+          <video class="ec-video" src="videos/efb.mp4" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+          <div class="ec-fuel"><span class="ec-dot"></span><span data-i18n-en="">EFB Pellet</span><span data-i18n-id="">Pelet TKKS</span></div>
+          <div class="ec-metric">
+            <div class="ec-num cat">&asymp;0</div>
+            <div class="ec-unit mono"><span data-i18n-en="">net fossil CO&#8322;</span><span data-i18n-id="">CO&#8322; fosil neto</span></div>
+            <div class="ec-cap"><span data-i18n-en="">Biogenic carbon, recently captured</span><span data-i18n-id="">Karbon biogenik, baru terserap</span></div>
+          </div>
+          <ul class="ec-tags">
+            <li data-i18n-en="">Low chlorine + sulfur</li><li data-i18n-id="">Klorin + belerang rendah</li>
+            <li data-i18n-en="">Renewable residue</li><li data-i18n-id="">Residu terbarukan</li>
+            <li data-i18n-en="">Traceable</li><li data-i18n-id="">Terlacak</li>
+          </ul>
+        </div>
+      </div>
 
-    <article class="cmp-track">
-      <h2 class="cmp-h"><span data-i18n-en="">Build Factory</span><span data-i18n-id="">Bangun Pabrik</span></h2>
-      <span class="cmp-sub"><span data-i18n-en="">For estates, investors &amp; developers</span><span data-i18n-id="">Untuk perkebunan, investor &amp; pengembang</span></span>
-      <p class="cmp-body">
-        <span data-i18n-en="">Co-develop a biomass pellet plant on your feedstock base &mdash; we bring the process, equipment, and operating know-how, modelled on our Lamandau line.</span>
-        <span data-i18n-id="">Bangun pabrik pelet biomassa bersama di atas basis bahan baku Anda &mdash; kami membawa proses, peralatan, dan pengetahuan operasi, mengacu pada lini Lamandau kami.</span>
+      <!-- divider + knob -->
+      <div class="ec-handle" aria-hidden="true">
+        <div class="ec-knob">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="10 7 5 12 10 17"></polyline><polyline points="14 7 19 12 14 17"></polyline>
+          </svg>
+        </div>
+      </div>
+
+      <div class="ec-hint" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 4 12 9 18"></polyline><polyline points="15 6 20 12 15 18"></polyline></svg>
+        <span data-i18n-en="">Drag to compare</span><span data-i18n-id="">Geser untuk membandingkan</span>
+      </div>
+
+      <p class="ec-note">
+        <span data-i18n-en="">Illustrative, combustion-CO&#8322; basis — biomass returns biogenic carbon from the short carbon cycle; coal releases fossil carbon locked away for ages.</span>
+        <span data-i18n-id="">Ilustratif, basis CO&#8322; pembakaran — biomassa melepas karbon biogenik dari siklus karbon pendek; batu bara melepas karbon fosil yang tersimpan jutaan tahun.</span>
       </p>
-      <a class="cmp-btn" href="partnership.html"><span data-i18n-en="">Start a project &rarr;</span><span data-i18n-id="">Mulai proyek &rarr;</span></a>
-    </article>
-  </div>
+    </div>
 </section>
 
 <!-- ============ FOOTER ============ -->
@@ -531,27 +556,6 @@ html.detail-open, html.detail-open body { overflow:hidden; }
   .ec-cap { max-width:15ch; font-size:13px; }
   .ec-tags li:nth-child(n+3) { display:none; }   /* keep one tag pair per panel on small screens */
   .ec-note { width:90%; bottom:10px; font-size:11px; }
-}
-
-/* ===== COMPARISON · spec grid + two tracks ===== */
-.cmp { background:var(--uv); color:var(--bn); }
-.cmp-specs { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--hair-bn); }
-.cmp-cell { display:flex; align-items:center; justify-content:center; text-align:center; min-height:clamp(88px,12vh,140px); padding:clamp(14px,2vw,26px); border-left:1px solid var(--hair-bn); border-bottom:1px solid var(--hair-bn); font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(19px,2.3vw,34px); letter-spacing:-.02em; color:var(--bn); }
-.cmp-cell:nth-child(4n+1) { border-left:0; }
-.cmp-tracks { display:grid; grid-template-columns:1fr 1fr; }
-.cmp-track { display:flex; flex-direction:column; min-height:clamp(340px,46vh,560px); padding:clamp(38px,5vw,96px) clamp(26px,4vw,80px) clamp(40px,5vw,80px); }
-.cmp-track + .cmp-track { border-left:1px solid var(--hair-bn); }
-.cmp-h { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(38px,6vw,92px); line-height:.94; letter-spacing:-.03em; color:var(--bn); }
-.cmp-sub { margin-top:14px; font-family:"Catalogue",sans-serif; font-weight:600; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--sg); }
-.cmp-body { margin-top:clamp(18px,2vw,28px); font-size:clamp(15px,1.15vw,18px); line-height:1.6; color:rgba(255,253,245,.82); max-width:46ch; }
-.cmp-btn { margin-top:auto; align-self:flex-start; display:inline-block; font-family:"Catalogue",sans-serif; font-weight:600; font-size:15px; color:var(--bn); background:transparent; border:1px solid var(--bn); padding:13px 26px; border-radius:999px; text-decoration:none; transition:background .2s var(--ease), color .2s var(--ease); }
-.cmp-btn:hover { background:var(--bn); color:var(--uv); }
-@media (max-width:900px){
-  .cmp-specs { grid-template-columns:repeat(2,1fr); }
-  .cmp-cell { border-left:1px solid var(--hair-bn); }
-  .cmp-cell:nth-child(2n+1) { border-left:0; }
-  .cmp-tracks { grid-template-columns:1fr; }
-  .cmp-track + .cmp-track { border-left:0; border-top:1px solid var(--hair-bn); }
 }
 </style>
 
