@@ -67,8 +67,11 @@
     </div>
 
     <!-- the single morphing video block -->
-    <div class="vt-video" id="vt-video">
-      <video class="vt-video-el" src="videos/company-hero.mp4" poster="images/company-hero-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="SUAR biomass teaser loop"></video>
+    <div class="vt-video" id="vt-video" role="img" aria-label="SUAR biomass montage — pellets, empty fruit bunch fiber, conveyor, warehouse">
+      <div class="mv-shot" aria-hidden="true"></div>
+      <div class="mv-shot" aria-hidden="true"></div>
+      <div class="mv-shot" aria-hidden="true"></div>
+      <div class="mv-shot" aria-hidden="true"></div>
       <span class="vt-logo" aria-hidden="true"><img src="logo-uv.png" alt="SUAR"></span>
     </div>
 
@@ -378,7 +381,19 @@ body.lang-id .ah-about-sub[data-i18n-id] { display:block; }
   height:calc(var(--vh1) + (var(--vh2) - var(--vh1)) * var(--p));
   background:var(--uv); border:1px solid var(--uv-deep,#4C4191); display:flex; align-items:center; justify-content:center; will-change:left,width,height; }
 .vt-video .ahv-label { font-family:"Louize Display",serif; font-size:clamp(22px,2.6vw,46px); letter-spacing:.05em; color:var(--bn); }
-.vt-video .vt-video-el { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+/* seamless CSS montage: 4 editorial shots crossfade with subtle Ken-Burns motion */
+.vt-video .mv-shot { position:absolute; inset:0; background-size:cover; background-position:center; opacity:0;
+  animation:mv-fade 13s cubic-bezier(.4,0,.2,1) infinite, mv-kb 13s ease-in-out infinite; will-change:opacity,transform; }
+.vt-video .mv-shot:nth-child(1){ background-image:url(images/hero-pellet.jpg);    animation-delay:0s,0s;         transform-origin:42% 45%; }
+.vt-video .mv-shot:nth-child(2){ background-image:url(images/hero-efb-fiber.jpg); animation-delay:-3.25s,-3.25s; transform-origin:60% 38%; }
+.vt-video .mv-shot:nth-child(3){ background-image:url(images/hero-conveyor.jpg);  animation-delay:-6.5s,-6.5s;   transform-origin:46% 60%; }
+.vt-video .mv-shot:nth-child(4){ background-image:url(images/hero-warehouse.jpg); animation-delay:-9.75s,-9.75s; transform-origin:55% 52%; }
+@keyframes mv-fade { 0%{opacity:0} 7%{opacity:1} 25%{opacity:1} 32%{opacity:0} 100%{opacity:0} }
+@keyframes mv-kb { 0%{transform:scale(1.04)} 100%{transform:scale(1.15)} }
+@media (prefers-reduced-motion:reduce){
+  .vt-video .mv-shot { animation:none; }
+  .vt-video .mv-shot:nth-child(1){ opacity:1; transform:none; }
+}
 .vt-video .vt-logo { position:absolute; inset:0; display:grid; place-items:center; z-index:2; pointer-events:none; }
 .vt-video .vt-logo::before { content:""; position:absolute; width:clamp(200px,30vw,460px); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle, rgba(255,253,245,.6), rgba(255,253,245,0) 68%); }
 .vt-video .vt-logo img { position:relative; width:clamp(104px,12vw,240px); height:auto; display:block; }
