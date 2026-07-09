@@ -122,9 +122,25 @@
       </article>
     </div>
 
+    <div class="mkt-chart reveal">
+      <div class="mc-controls">
+        <div class="mc-toggle" data-group="type" role="group" aria-label="Pellet type">
+          <button type="button" data-v="efb" aria-pressed="false"><span data-i18n-en="">EFB Pellet</span><span data-i18n-id="">Pelet EFB</span></button>
+          <button type="button" data-v="wood" class="active" aria-pressed="true"><span data-i18n-en="">Wood Pellet</span><span data-i18n-id="">Pelet Kayu</span></button>
+        </div>
+        <div class="mc-toggle" data-group="range" role="group" aria-label="Range">
+          <button type="button" data-v="monthly" class="active" aria-pressed="true"><span data-i18n-en="">Monthly</span><span data-i18n-id="">Bulanan</span></button>
+          <button type="button" data-v="yearly" aria-pressed="false"><span data-i18n-en="">Yearly</span><span data-i18n-id="">Tahunan</span></button>
+        </div>
+        <span class="mc-unit">US$ / t</span>
+      </div>
+      <div class="mc-canvas" id="mc-canvas"></div>
+      <div class="mc-legend" id="mc-legend"></div>
+    </div>
+
     <p class="mkt-foot reveal">
-      <span data-i18n-en="">Indicative reference prices compiled from public market data (industry press, trade statistics &amp; Argus commentary) — not a live or subscription quote. Updated periodically; contact us for a current offer. As of Jul 2026.</span>
-      <span data-i18n-id="">Harga acuan indikatif, disusun dari data pasar publik (media industri, statistik perdagangan &amp; catatan Argus) — bukan kutipan waktu-nyata atau langganan. Diperbarui berkala; hubungi kami untuk penawaran terkini. Per Jul 2026.</span>
+      <span data-i18n-en="">Indicative reference prices &amp; trends compiled from public market data (industry press, trade statistics &amp; Argus commentary) — not a live or subscription quote. Updated periodically; contact us for a current offer. As of Jul 2026.</span>
+      <span data-i18n-id="">Harga &amp; tren acuan indikatif, disusun dari data pasar publik (media industri, statistik perdagangan &amp; catatan Argus) — bukan kutipan waktu-nyata atau langganan. Diperbarui berkala; hubungi kami untuk penawaran terkini. Per Jul 2026.</span>
     </p>
   </div>
 </section>
@@ -310,6 +326,26 @@ body.lang-id .page-hero .eyebrow[data-i18n-id] { display:block; }
   .mkt-card { border-left:0; border-top:1px solid var(--uv); }
   .mkt-card:first-child { border-top:0; }
 }
+
+/* ----- market price chart ----- */
+.mkt-chart { margin-top:clamp(28px,3.5vw,52px); }
+.mc-controls { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-bottom:20px; }
+.mc-toggle { display:inline-flex; border:1px solid var(--uv); border-radius:999px; overflow:hidden; }
+.mc-toggle button { font-family:"Catalogue",sans-serif; font-weight:600; font-size:13px; letter-spacing:.02em; padding:9px 18px; border:0; background:transparent; color:var(--uv); cursor:pointer; transition:background .2s var(--ease), color .2s var(--ease); }
+.mc-toggle button.active { background:var(--uv); color:var(--bn); }
+.mc-toggle button:focus-visible { outline:2px solid var(--sg); outline-offset:-2px; }
+.mc-unit { margin-left:auto; font-family:"Catalogue",sans-serif; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); }
+.mc-canvas { width:100%; aspect-ratio:760/380; }
+.mc-canvas svg { width:100%; height:100%; display:block; overflow:visible; }
+.mc-grid { stroke:rgba(25,25,23,.10); }
+.mc-ylab, .mc-xlab { font-family:"Catalogue",sans-serif; font-size:11px; fill:var(--ink-soft); }
+.mc-legend { display:flex; flex-wrap:wrap; gap:20px 26px; margin-top:18px; }
+.mc-leg { display:inline-flex; align-items:center; gap:9px; font-family:"Catalogue",sans-serif; font-size:13px; }
+.mc-dot { width:12px; height:12px; border-radius:50%; flex:none; }
+.mc-leg-name { color:var(--ink-soft); }
+.mc-leg-val { font-weight:700; color:var(--bk); }
+@media (max-width:900px){ .mc-unit { margin-left:0; order:-1; width:100%; } .mc-canvas { aspect-ratio:360/300; } }
 </style>
 
+<script src="market-chart.js"></script>
 </body></html>
