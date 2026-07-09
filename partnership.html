@@ -89,6 +89,46 @@
   </div>
 </section>
 
+<!-- ============ MARKET PRICE INDEX ============ -->
+<section class="section mkt">
+  <div class="wrap">
+    <div class="mkt-head reveal">
+      <span class="eyebrow" data-i18n-en="">Market index</span>
+      <span class="eyebrow" data-i18n-id="">Indeks pasar</span>
+      <h2 class="mkt-title louize">
+        <span data-i18n-en="">Where biomass trades today</span>
+        <span data-i18n-id="">Harga biomassa, hari ini</span>
+      </h2>
+    </div>
+
+    <div class="mkt-grid reveal d1">
+      <article class="mkt-card">
+        <span class="mkt-region"><span data-i18n-en="">Asia · Japan &amp; Korea</span><span data-i18n-id="">Asia · Jepang &amp; Korea</span></span>
+        <div class="mkt-price">US$ 130<span class="mkt-unit">/t</span></div>
+        <span class="mkt-basis mono">CIF</span>
+        <p class="mkt-note"><span data-i18n-en="">EFB &amp; biomass pellet, FIT-grade import.</span><span data-i18n-id="">Pelet EFB &amp; biomassa, impor kelas-FIT.</span></p>
+      </article>
+      <article class="mkt-card">
+        <span class="mkt-region"><span data-i18n-en="">Europe · EU (ARA)</span><span data-i18n-id="">Eropa · UE (ARA)</span></span>
+        <div class="mkt-price">&euro; 245<span class="mkt-unit">/t</span></div>
+        <span class="mkt-basis mono">CIF ARA</span>
+        <p class="mkt-note"><span data-i18n-en="">Industrial pellet, NW-Europe reference.</span><span data-i18n-id="">Pelet industri, acuan Eropa Barat Laut.</span></p>
+      </article>
+      <article class="mkt-card">
+        <span class="mkt-region"><span data-i18n-en="">Local · Indonesia</span><span data-i18n-id="">Lokal · Indonesia</span></span>
+        <div class="mkt-price">US$ 100<span class="mkt-unit">/t</span></div>
+        <span class="mkt-basis mono">FOB</span>
+        <p class="mkt-note"><span data-i18n-en="">PKS &amp; EFB pellet, east-coast Sumatra.</span><span data-i18n-id="">Pelet PKS &amp; EFB, pantai timur Sumatra.</span></p>
+      </article>
+    </div>
+
+    <p class="mkt-foot reveal">
+      <span data-i18n-en="">Indicative reference prices — not a live quote. Sourced from Argus Biomass Markets and public trade data, updated periodically. Contact us for a current offer. As of Jul 2026.</span>
+      <span data-i18n-id="">Harga acuan indikatif — bukan kutipan waktu-nyata. Bersumber dari Argus Biomass Markets dan data perdagangan publik, diperbarui berkala. Hubungi kami untuk penawaran terkini. Per Jul 2026.</span>
+    </p>
+  </div>
+</section>
+
 <!-- ============ HOW IT WORKS ============ -->
 <section class="section how">
   <div class="wrap">
@@ -250,6 +290,25 @@ body.lang-id .page-hero .eyebrow[data-i18n-id] { display:block; }
   .cmp-cell:nth-child(2n+1) { border-left:0; }
   .cmp-tracks { grid-template-columns:1fr; }
   .cmp-track + .cmp-track { border-left:0; border-top:1px solid var(--hair-bn); }
+}
+
+/* ===== MARKET PRICE INDEX ===== */
+.mkt { background:var(--bn); border-top:1px solid var(--hair); padding:clamp(48px,7vw,110px) 0; }
+.mkt-head { margin-bottom:clamp(28px,4vw,52px); }
+.mkt-title { font-family:"Louize Display","Louize",Georgia,serif; font-weight:400; font-size:clamp(30px,4.4vw,64px); line-height:1.02; letter-spacing:-.02em; color:var(--uv); margin-top:12px; }
+.mkt-grid { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--uv); }
+.mkt-card { padding:clamp(24px,2.6vw,44px); border-left:1px solid var(--uv); display:flex; flex-direction:column; gap:10px; min-height:clamp(220px,24vw,300px); }
+.mkt-card:first-child { border-left:0; }
+.mkt-region { font-family:"Catalogue",sans-serif; font-weight:700; font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--uv); }
+.mkt-price { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(38px,4.8vw,72px); line-height:1; letter-spacing:-.03em; color:var(--bk); margin-top:auto; }
+.mkt-price .mkt-unit { font-size:.34em; font-weight:600; color:var(--ink-soft); margin-left:6px; letter-spacing:0; }
+.mkt-basis { align-self:flex-start; font-size:12px; letter-spacing:.14em; color:var(--bk); background:var(--sg); padding:4px 10px; border-radius:999px; }
+.mkt-note { font-size:clamp(13px,1vw,15px); line-height:1.5; color:var(--ink-soft); }
+.mkt-foot { margin-top:clamp(20px,2.4vw,32px); font-size:12.5px; line-height:1.55; color:var(--ink-faint); max-width:70ch; }
+@media (max-width:900px){
+  .mkt-grid { grid-template-columns:1fr; }
+  .mkt-card { border-left:0; border-top:1px solid var(--uv); }
+  .mkt-card:first-child { border-top:0; }
 }
 </style>
 
