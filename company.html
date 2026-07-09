@@ -67,7 +67,9 @@
     </div>
 
     <!-- the single morphing video block -->
-    <div class="vt-video" id="vt-video"><span class="ahv-label">VIDEO</span></div>
+    <div class="vt-video" id="vt-video">
+      <video class="vt-video-el" src="videos/company-hero.mp4" poster="images/company-hero-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="SUAR biomass pellets, editorial hero loop"></video>
+    </div>
 
     <!-- State 2 · our story (full-width divider + two columns) -->
     <div class="vt-story">
@@ -375,6 +377,7 @@ body.lang-id .ah-about-sub[data-i18n-id] { display:block; }
   height:calc(var(--vh1) + (var(--vh2) - var(--vh1)) * var(--p));
   background:var(--uv); border:1px solid var(--uv-deep,#4C4191); display:flex; align-items:center; justify-content:center; will-change:left,width,height; }
 .vt-video .ahv-label { font-family:"Louize Display",serif; font-size:clamp(22px,2.6vw,46px); letter-spacing:.05em; color:var(--bn); }
+.vt-video .vt-video-el { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
 
 /* State 2 · our story (full-width divider; content indented, two columns) */
 .vt-story { position:absolute; left:0; right:0; z-index:2;
