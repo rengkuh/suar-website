@@ -68,7 +68,8 @@
 
     <!-- the single morphing video block -->
     <div class="vt-video" id="vt-video">
-      <video class="vt-video-el" src="videos/company-hero.mp4" poster="images/company-hero-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="SUAR biomass pellets, editorial hero loop"></video>
+      <video class="vt-video-el" src="videos/company-hero.mp4" poster="images/company-hero-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="SUAR biomass teaser loop"></video>
+      <span class="vt-logo" aria-hidden="true"><img src="logo-uv.png" alt="SUAR"></span>
     </div>
 
     <!-- State 2 · our story (full-width divider + two columns) -->
@@ -378,6 +379,9 @@ body.lang-id .ah-about-sub[data-i18n-id] { display:block; }
   background:var(--uv); border:1px solid var(--uv-deep,#4C4191); display:flex; align-items:center; justify-content:center; will-change:left,width,height; }
 .vt-video .ahv-label { font-family:"Louize Display",serif; font-size:clamp(22px,2.6vw,46px); letter-spacing:.05em; color:var(--bn); }
 .vt-video .vt-video-el { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; }
+.vt-video .vt-logo { position:absolute; inset:0; display:grid; place-items:center; z-index:2; pointer-events:none; }
+.vt-video .vt-logo::before { content:""; position:absolute; width:clamp(200px,30vw,460px); aspect-ratio:1; border-radius:50%; background:radial-gradient(circle, rgba(255,253,245,.6), rgba(255,253,245,0) 68%); }
+.vt-video .vt-logo img { position:relative; width:clamp(104px,12vw,240px); height:auto; display:block; }
 
 /* State 2 · our story (full-width divider; content indented, two columns) */
 .vt-story { position:absolute; left:0; right:0; z-index:2;
