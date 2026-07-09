@@ -50,7 +50,7 @@
 
   var state = { type: "wood", range: "monthly" };
 
-  var W = 760, H = 380, PL = 52, PR = 18, PT = 18, PB = 34;
+  var W = 560, H = 380, PL = 52, PR = 18, PT = 18, PB = 34;
   var plotW = W - PL - PR, plotH = H - PT - PB;
 
   function niceBounds(min, max) {

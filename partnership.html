@@ -185,26 +185,20 @@
         </div>
       </div>
 
-      <div class="scat-wrap">
-        <span class="scat-cap" data-i18n-en="">Calorific value vs price</span><span class="scat-cap" data-i18n-id="">Nilai kalori vs harga</span>
-        <svg class="scat" viewBox="0 0 300 220" role="img" aria-label="Calorific value versus price scatter">
-          <line x1="42" y1="12" x2="42" y2="185" class="ax"/>
-          <line x1="42" y1="185" x2="292" y2="185" class="ax"/>
-          <text x="10" y="20" class="axl">200</text>
-          <text x="10" y="188" class="axl">60</text>
-          <text x="46" y="205" class="axl">2,000</text>
-          <text x="250" y="205" class="axl">6,500</text>
-          <text x="150" y="217" class="axc" text-anchor="middle">kcal/kg →</text>
-          <!-- EFB (4300,122) -->
-          <g class="mk" style="fill:#5F52AA"><path d="M-5,-5 L5,5 M5,-5 L-5,5" transform="translate(170,109)" stroke="#5F52AA" stroke-width="3"/></g>
-          <text x="176" y="106" class="axl" fill="#5F52AA">EFB</text>
-          <!-- Wood (4800,180) -->
-          <path d="M-5,-5 L5,5 M5,-5 L-5,5" transform="translate(198,42)" stroke="#1f8a5b" stroke-width="3"/>
-          <text x="204" y="39" class="axl" fill="#1f8a5b">Wood</text>
-          <!-- Coal (6000,100) -->
-          <path d="M-5,-5 L5,5 M5,-5 L-5,5" transform="translate(265,133)" stroke="#333" stroke-width="3"/>
-          <text x="238" y="130" class="axl" fill="#333">Coal</text>
-        </svg>
+      <div class="mkt-chart">
+        <div class="mc-subhead"><span data-i18n-en="">Price trend by market · US$/t</span><span data-i18n-id="">Tren harga per pasar · US$/t</span></div>
+        <div class="mc-controls">
+          <div class="mc-toggle" data-group="type" role="group" aria-label="Pellet type">
+            <button type="button" data-v="efb" aria-pressed="false"><span data-i18n-en="">EFB Pellet</span><span data-i18n-id="">Pelet EFB</span></button>
+            <button type="button" data-v="wood" class="active" aria-pressed="true"><span data-i18n-en="">Wood Pellet</span><span data-i18n-id="">Pelet Kayu</span></button>
+          </div>
+          <div class="mc-toggle" data-group="range" role="group" aria-label="Range">
+            <button type="button" data-v="monthly" class="active" aria-pressed="true"><span data-i18n-en="">Monthly</span><span data-i18n-id="">Bulanan</span></button>
+            <button type="button" data-v="yearly" aria-pressed="false"><span data-i18n-en="">Yearly</span><span data-i18n-id="">Tahunan</span></button>
+          </div>
+        </div>
+        <div class="mc-canvas" id="mc-canvas"></div>
+        <div class="mc-legend" id="mc-legend"></div>
       </div>
     </section>
 
@@ -238,21 +232,6 @@
 
   </div>
 
-    <div class="mkt-chart reveal">
-      <div class="mc-subhead"><span data-i18n-en="">Price trend by market · US$/t</span><span data-i18n-id="">Tren harga per pasar · US$/t</span></div>
-      <div class="mc-controls">
-        <div class="mc-toggle" data-group="type" role="group" aria-label="Pellet type">
-          <button type="button" data-v="efb" aria-pressed="false"><span data-i18n-en="">EFB Pellet</span><span data-i18n-id="">Pelet EFB</span></button>
-          <button type="button" data-v="wood" class="active" aria-pressed="true"><span data-i18n-en="">Wood Pellet</span><span data-i18n-id="">Pelet Kayu</span></button>
-        </div>
-        <div class="mc-toggle" data-group="range" role="group" aria-label="Range">
-          <button type="button" data-v="monthly" class="active" aria-pressed="true"><span data-i18n-en="">Monthly</span><span data-i18n-id="">Bulanan</span></button>
-          <button type="button" data-v="yearly" aria-pressed="false"><span data-i18n-en="">Yearly</span><span data-i18n-id="">Tahunan</span></button>
-        </div>
-      </div>
-      <div class="mc-canvas" id="mc-canvas"></div>
-      <div class="mc-legend" id="mc-legend"></div>
-    </div>
 
     <p class="mkt-foot reveal">
       <span data-i18n-en="">Indicative reference prices &amp; trends compiled from public market &amp; technical references — not a live or subscription quote. Updated periodically; contact us for a current offer. As of Jul 2026.</span>
@@ -451,7 +430,7 @@ body.lang-id .page-hero .eyebrow[data-i18n-id] { display:block; }
 .mc-toggle button.active { background:var(--uv); color:var(--bn); }
 .mc-toggle button:focus-visible { outline:2px solid var(--sg); outline-offset:-2px; }
 .mc-unit { margin-left:auto; font-family:"Catalogue",sans-serif; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); }
-.mc-canvas { width:100%; aspect-ratio:760/380; }
+.mc-canvas { width:100%; aspect-ratio:560/380; }
 .mc-canvas svg { width:100%; height:100%; display:block; overflow:visible; }
 .mc-grid { stroke:rgba(25,25,23,.10); }
 .mc-ylab, .mc-xlab { font-family:"Catalogue",sans-serif; font-size:11px; fill:var(--ink-soft); }
