@@ -222,7 +222,7 @@ body.loading { overflow:hidden; }
 @media (prefers-reduced-motion:reduce){ .loader{ display:none; } }
 
 /* line-mask reveal */
-[data-line-mask] .lmask { display:block; overflow:hidden; }
+[data-line-mask] .lmask { display:block; overflow:hidden; padding-bottom:.18em; margin-bottom:-.18em; }
 [data-line-mask] .lmask-i { display:block; transform:translateY(110%); transition:transform 1s cubic-bezier(.22,.61,.36,1); }
 [data-line-mask].lines-in .lmask-i { transform:none; }
 @media (prefers-reduced-motion:reduce){ [data-line-mask] .lmask-i{ transform:none; } }
