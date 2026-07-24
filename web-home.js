@@ -8,6 +8,7 @@
   /* ---------- LANGUAGE ---------- */
   function applyLang(lang) {
     document.body.classList.toggle("lang-id", lang === "id");
+    document.body.classList.toggle("lang-ja", lang === "ja");
     document.querySelectorAll(".lang button").forEach(function (b) {
       b.classList.toggle("active", b.dataset.lang === lang);
     });

@@ -39,9 +39,9 @@
   };
 
   var SERIES = [
-    { key: "asia",  color: "#5F52AA", en: "Asia · Japan & Korea", id: "Asia · Jepang & Korea" },
-    { key: "eu",    color: "#E0A200", en: "Europe · EU (ARA)",    id: "Eropa · UE (ARA)" },
-    { key: "local", color: "#1f8a5b", en: "Local · Indonesia",     id: "Lokal · Indonesia" }
+    { key: "asia",  color: "#5F52AA", en: "Asia · Japan & Korea", id: "Asia · Jepang & Korea", ja: "アジア · 日本・韓国" },
+    { key: "eu",    color: "#E0A200", en: "Europe · EU (ARA)",    id: "Eropa · UE (ARA)",       ja: "欧州 · EU（ARA）" },
+    { key: "local", color: "#1f8a5b", en: "Local · Indonesia",     id: "Lokal · Indonesia",      ja: "国内 · インドネシア" }
   ];
 
   var wrap = document.getElementById("mc-canvas");
@@ -102,12 +102,13 @@
     // legend with latest values
     if (legendEl) {
       var idLang = document.body.classList.contains("lang-id");
+      var jaLang = document.body.classList.contains("lang-ja");
       legendEl.innerHTML = SERIES.map(function (s) {
         var arr = d[s.key];
         var last = arr[arr.length - 1];
-        var name = idLang ? s.id : s.en;
+        var name = jaLang ? s.ja : idLang ? s.id : s.en;
         return '<span class="mc-leg"><span class="mc-dot" style="background:' + s.color + '"></span>' +
-          '<span class="mc-leg-name"><span data-i18n-en="">' + s.en + '</span><span data-i18n-id="">' + s.id + '</span></span>' +
+          '<span class="mc-leg-name"><span data-i18n-en="">' + s.en + '</span><span data-i18n-id="">' + s.id + '</span><span data-i18n-ja="">' + s.ja + '</span></span>' +
           '<span class="mc-leg-val">US$ ' + last + '</span></span>';
       }).join("");
     }

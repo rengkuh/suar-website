@@ -207,8 +207,11 @@ body.hero-active .nav .links { padding-left:calc(50vw + clamp(24px,3vw,48px)); }
 .bk-bg { background:var(--bk); color:var(--bn); }
 .hairline { height:1px; background:var(--hair); border:none; }
 [data-i18n-id] { display:none; }
+[data-i18n-ja] { display:none; }
 body.lang-id [data-i18n-en] { display:none; }
 body.lang-id [data-i18n-id] { display:revert; }
+body.lang-ja [data-i18n-en], body.lang-ja [data-i18n-id] { display:none; }
+body.lang-ja [data-i18n-ja] { display:revert; }
 
 /* ---------- ATOLL MOTION LAYER ---------- */
 body.loading { overflow:hidden; }
