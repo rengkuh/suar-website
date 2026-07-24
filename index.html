@@ -299,13 +299,13 @@ body.atm-flowing { --marq-dur:15s; --band-dur:14s; --bandtext-dur:13s; --reveal-
 .quote-marquee { border-bottom:none; }
 .quote-marquee .marquee-track { gap:0; padding:18px 0; }
 .quote-marquee .marquee-track span { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(22px,3.2vw,44px); letter-spacing:-.01em; text-transform:uppercase; color:var(--uv); }
-.quote-marquee .marquee-track span::after { content:"✳"; margin:0 clamp(28px,4vw,60px); color:var(--sg); font-size:.6em; vertical-align:middle; }
+.quote-marquee .marquee-track span::after { content:""; margin:0 clamp(28px,4vw,60px); }
 /* UV brush band divider */
 .brush-band { position:relative; height:clamp(34px,4.2vw,56px); background:url("brush-tile.svg") repeat-x center/auto 100%; border-bottom:1px solid var(--hair); animation:brush-drift 30s linear infinite; overflow:hidden; }
 @keyframes brush-drift { to { background-position-x:-378px; } }
 .band-track { position:absolute; inset:0; display:flex; align-items:center; gap:0; white-space:nowrap; width:max-content; animation:band-rev 28s linear infinite; }
 .band-track span { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(16px,1.8vw,22px); letter-spacing:.04em; text-transform:uppercase; color:var(--uv); }
-.band-track span::after { content:"✳"; margin:0 clamp(18px,2.4vw,34px); color:var(--uv); font-size:.7em; vertical-align:middle; }
+.band-track span::after { content:""; margin:0 clamp(18px,2.4vw,34px); }
 @keyframes band-rev { from { transform:translateX(-50%); } to { transform:translateX(0); } }
 @media (prefers-reduced-motion:reduce){ .brush-band, .band-track{ animation:none; } }
 /* ===== HERO TRANSITION (scroll-driven Artboard1 → Artboard7) =====
