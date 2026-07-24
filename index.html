@@ -343,7 +343,7 @@ body.atm-flowing { --marq-dur:15s; --band-dur:14s; --bandtext-dur:13s; --reveal-
   transform:translateY(calc((100vh - 34vh - clamp(40px,5vh,60px)) * (1 - var(--p)))); will-change:transform; }
 .ht-ticker-track { display:flex; white-space:nowrap; width:max-content; animation:ht-march 26s linear infinite reverse; }   /* runs opposite to the brush drift */
 .ht-ticker-track span { font-family:"Catalogue",sans-serif; font-weight:700; font-size:clamp(13px,1.5vw,18px); letter-spacing:.04em; text-transform:uppercase; color:var(--uv); padding:0 clamp(20px,2.4vw,40px); }
-.ht-ticker-track span::after { content:"✳"; margin-left:clamp(40px,4.8vw,80px); color:var(--uv); font-size:.7em; vertical-align:middle; }
+.ht-ticker-track span { padding:0 clamp(40px,4.8vw,80px); }
 @keyframes ht-march { from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
 
 /* PelletImageReveal — fills the lower section, clip-reveals from the bottom */
